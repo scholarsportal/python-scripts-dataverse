@@ -2,8 +2,8 @@ import requests
 import os
 
 API_TOKEN = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-SERVER_URL = "https://borealisdata.ca"
-PERSISTENT_ID = "doi:10.5683/SP3/PSWY62"
+SERVER_URL = "https://demo.borealisdata.ca"
+PERSISTENT_ID = "doi:10.80240/FK2/UKKWRJ"
 
 def main():
     print(f"Start downloading files for {PERSISTENT_ID}")
@@ -17,8 +17,11 @@ def main():
         for dataset in data:
             id = dataset["dataFile"]["id"]
             filename = dataset["dataFile"]["filename"]
-            directoryLabel = dataset["directoryLabel"]
-            dr = "dataset/" + directoryLabel
+            if "directoryLabel" in dataset:
+                directoryLabel = dataset["directoryLabel"]
+                dr = "dataset/" + directoryLabel
+            else:
+                dr = "dataset"
             name = dr + "/" + filename
             if not os.path.isdir(dr):
                 os.makedirs(dr)
@@ -26,7 +29,7 @@ def main():
             url_file = SERVER_URL + "/api/access/datafile/" + str(id)
             r = requests.get(url_file, headers=headers)
             if r.status_code != 200:
-                print(f"Cannot download {directoryLabel}/{filename} ")
+                print(f"Cannot download {filename} ")
                 continue
             else:
                 print(name)
