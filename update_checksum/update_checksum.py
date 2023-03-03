@@ -6,7 +6,8 @@ from psycopg2 import OperationalError
 import configparser
 import sys
 import os
-import magic
+import time
+import requests
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -56,10 +57,14 @@ def execute_read_query(connection, query):
     except OperationalError as e:
         print(f"The ERROR '{e}' occurred")
 
-def find_identifier(connection, owner_id):
+def find_identifier(owner_id):
+    connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
+                                   cfg_dataverse['db_password'],
+                                   cfg_dataverse['db_host'], cfg_dataverse['db_port'])
     query = "select concat(authority, '/', identifier) from dvobject where id={0}".format(owner_id)
     result = execute_read_query(connection, query)
     print(result)
+    connection.close()
     return result
 
 def replace_file(result, identifier, replacement_file):
@@ -71,18 +76,61 @@ def replace_file(result, identifier, replacement_file):
     print(identifier)
     file_name = "s3://" + backet_name + "/" + identifier + "/" + storage_id
     print(file_name)
-    cmd = "aws --endpoint-url https://olrc2.scholarsportal.info s3 cp " + replacement_file + " " + file_name
+    cmd = "aws --endpoint-url " + cfg_dataverse['s3_endpoint'] + " s3 cp " + replacement_file + " " + file_name
     os.system(cmd)
-def find_storage_id(connection,file_id):
+def find_storage_id(file_id):
+    connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
+                                   cfg_dataverse['db_password'],
+                                   cfg_dataverse['db_host'], cfg_dataverse['db_port'])
     query = "select owner_id, storageidentifier from dvobject where id={0}".format(str(file_id))
     result = execute_read_query(connection, query)
     print(result)
+    connection.close()
     return result
 
-def find_checksum(connection, file_id, checksumvalue, filesize):
+def update_file_metadata(file_id, filename):
+    connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
+                                   cfg_dataverse['db_password'],
+                                   cfg_dataverse['db_host'], cfg_dataverse['db_port'])
+    query = "update filemetadata set label ='{0}' where datafile_id={1}".format(filename, str(file_id))
+    execute_query(connection, query)
+    connection.close()
+
+def update_checksum(file_id, checksumvalue, filesize, contenttype):
+    connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
+                                   cfg_dataverse['db_password'],
+                                   cfg_dataverse['db_host'], cfg_dataverse['db_port'])
 
     query = "update datafile set checksumtype='MD5', checksumvalue='{1}', filesize={2} where id={0}".format(str(file_id), checksumvalue, filesize)
     execute_query(connection, query)
+    connection.close()
+
+def get_file_metadata(file_id):
+    connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
+                                   cfg_dataverse['db_password'],
+                                   cfg_dataverse['db_host'], cfg_dataverse['db_port'])
+
+    query = "select contenttype, ingeststatus from datafile where id={0}".format(str(file_id))
+    result = execute_read_query(connection, query)
+    connection.close()
+    return result
+
+def uningest_file(file_id, type):
+    if type == "text/tab-separated-values":
+        url = url_base + "/api/files/" + str(file_id) + "/uningest"
+        resp = requests.post(url, headers=headers)
+        print(resp.status_code)
+
+
+def reingest_file(originalFileFormat, file_ending, file_id):
+    original = originalFileFormat.lower()
+    if original == "text/tab-separated-values" or file_ending == 'sav' or \
+            file_ending == 'dta' or file_ending == 'por' or file_ending == 'csv' or \
+            file_ending == 'tsv' or file_ending == 'xlxs' or file_ending == 'xls':
+        url = url_base + "/api/files/" + str(file_id) + "/reingest"
+        resp=requests.post(url, headers=headers)
+        print(resp.status_code)
+        print(resp.json())
 
 def main():
     csv_file = open(cfg_dataverse['list_file'])
@@ -90,30 +138,47 @@ def main():
 
     for file in reader:
         print(file[0])
+        file_metadata = get_file_metadata(file[0])
+        print(file_metadata)
+        uningest_file(file[0], file_metadata[0][0])
 
-        resp=data_api.get_datafile(file[0])
+        #Get new file
+        resp = requests.get(file[1], allow_redirects=True)
         if resp.status_code == 200:
-            open('test.txt', 'wb').write(resp.content)
-            type = magic.from_file('test.pdf', mime=True)
-            print(type)
+            open('temp_file', 'wb').write(resp.content)
+
+            #Replace file part
+            result = find_storage_id(file[0])
+            owner_id = result[0][0]
+            time.sleep(1)
+            identifier = find_identifier(owner_id)
+            replace_file(result, identifier[0][0], "temp_file")
+
+            #Checksum
+            #type = magic.from_file('temp_file', mime=True)
+            #print(type)
             readable_hash = hashlib.md5(resp.content).hexdigest()
             print(readable_hash)
-            filesize = sys.getsizeof(resp.content)
+            filesize = os.path.getsize('temp_file')
             print(filesize)
-            print(os.path.getsize('test.pdf'))
-            connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'], cfg_dataverse['db_password'],
-                                           cfg_dataverse['db_host'], cfg_dataverse['db_port'])
-            result = find_storage_id(connection, file[0])
-            connection.close()
-            owner_id = result[0][0]
+            #resp_meta = api.get_datafile_metadata(file[0])
+            #print(resp_meta.json())
+            time.sleep(1)
+            update_checksum(file[0], readable_hash, filesize, type)
 
-            connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
-                                           cfg_dataverse['db_password'],
-                                           cfg_dataverse['db_host'], cfg_dataverse['db_port'])
-            identifier = find_identifier(connection, owner_id)
-            #find_checksum(connection, file[0], readable_hash, filesize)
-            connection.close()
-            replace_file(result, identifier[0][0], "test.pdf")
+
+            #Update file metadata (label)
+            filename_split = file[1].split('/')
+            filename = filename_split[len(filename_split)-1]
+            #update_file_metadata(file[0], filename)
+
+            file_ending = filename.split(".")[1]
+
+            reingest_file(file_metadata[0][0], file_ending, file[0])
+
+            #Delete temp file
+            os.system("rm temp_file")
+
     csv_file.close()
 
 if __name__ == '__main__':
