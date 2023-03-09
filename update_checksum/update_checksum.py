@@ -31,9 +31,8 @@ def create_connection(db_name, db_user, db_password, db_host, db_port):
             host=db_host,
             port=db_port,
         )
-        print("Connection to PostgreSQL DB successful")
     except OperationalError as e:
-        print(f"The ERROR '{e}' occurred")
+        logging.error(f"The ERROR '{e}' occurred")
     return connection
 
 def execute_query(connection, query):
@@ -41,10 +40,9 @@ def execute_query(connection, query):
     cursor = connection.cursor()
     try:
         cursor.execute(query)
-        print("Query executed successfully")
         connection.commit()
     except OperationalError as e:
-        print(f"The ERROR '{e}' occurred")
+        logging.error(f"The ERROR '{e}' occurred")
         connection.rollback()
 
 
@@ -56,7 +54,7 @@ def execute_read_query(connection, query):
         result = cursor.fetchall()
         return result
     except OperationalError as e:
-        print(f"The ERROR '{e}' occurred")
+        logging.error(f"The ERROR '{e}' occurred")
 
 def find_identifier(owner_id):
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
@@ -64,7 +62,6 @@ def find_identifier(owner_id):
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
     query = "select concat(authority, '/', identifier) from dvobject where id={0}".format(owner_id)
     result = execute_read_query(connection, query)
-    print(result)
     connection.close()
     return result
 
@@ -84,7 +81,6 @@ def find_storage_id(file_id):
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
     query = "select owner_id, storageidentifier from dvobject where id={0}".format(str(file_id))
     result = execute_read_query(connection, query)
-    print(result)
     connection.close()
     return result
 
@@ -117,23 +113,39 @@ def get_file_metadata(file_id):
 
 def uningest_file(file_id, type):
     if type == "text/tab-separated-values":
+        print(type)
+        print(file_id)
         url = url_base + "/api/files/" + str(file_id) + "/uningest"
+        logging.info(url)
+        print("Starting uningest {0}".format(str(file_id)))
         resp = requests.post(url, headers=headers)
-        if resp.status_code != 200:
+        if resp.status_code == 200 or resp.status_code == 201:
+            print("Successfully ended uningest")
+            return True
+        else:
+            print(resp.status_code)
+            print("Uningest was unsuccessful")
             return False
     else:
         return True
 
 def reingest_file(originalFileFormat, file_ending, file_id):
     original = originalFileFormat.lower()
+    logging.info(original)
     if original == "text/tab-separated-values" or file_ending == 'sav' or \
             file_ending == 'dta' or file_ending == 'por' or file_ending == 'csv' or \
             file_ending == 'tsv' or file_ending == 'xlxs' or file_ending == 'xls':
         url = url_base + "/api/files/" + str(file_id) + "/reingest"
+        logging.info(url)
+        print("Starting reingest {0}".format(str(file_id)))
         resp=requests.post(url, headers=headers)
         if resp.status_code != 200:
+            print("Reingest was unsuccessful")
             logging.error("Error reingesting file {0}".format(file_id))
             return False
+        else:
+            print("Successfully ended reingest")
+
     return True
 def main():
 
@@ -152,13 +164,15 @@ def main():
 
     for file in reader:
         logging.info(file[0])
+        print(str(file[0]))
         file_metadata = get_file_metadata(file[0])
         if file_metadata != None and len(file_metadata) > 0 and file_metadata[0] != None and len(file_metadata[0][0])>0:
             status_uningest=uningest_file(file[0], file_metadata[0][0])
+            print(status_uningest)
             if status_uningest:
-
                 #Get new file
                 resp = requests.get(file[1], allow_redirects=True)
+                time.sleep(20)
                 if resp.status_code == 200:
                     open('temp_file', 'wb').write(resp.content)
 
@@ -176,7 +190,7 @@ def main():
                             readable_hash = hashlib.md5(resp.content).hexdigest()
                             logging.info("Hash : " + readable_hash)
                             filesize = os.path.getsize('temp_file')
-                            logging.info("Filesize: " + filesize)
+                            logging.info("Filesize: " + str(filesize))
                             #resp_meta = api.get_datafile_metadata(file[0])
                             #print(resp_meta.json())
                             update_checksum(file[0], readable_hash, filesize, type)
@@ -185,7 +199,7 @@ def main():
                             #Update file metadata (label)
                             filename_split = file[1].split('/')
                             filename = filename_split[len(filename_split)-1]
-                            #update_file_metadata(file[0], filename)
+                            update_file_metadata(file[0], filename)
 
                             file_ending_split = filename.split(".")
                             if file_ending_split != None and  len(filename_split) > 1:
@@ -204,9 +218,12 @@ def main():
                 else:
                     logging.error("Cannot get file {0}".format(file[1]))
             else:
-                logging.error("Cannot get file metadata for file {0}".format(str(file[0])))
+                logging.error("Cannot uningest file {0}".format(str(file[0])))
+        else:
+            logging.error("Cannot get file metadata for file {0}".format(str(file[0])))
 
     csv_file.close()
+    logging.info("Program ended")
 
 if __name__ == '__main__':
     main()
