@@ -116,9 +116,10 @@ def uningest_file(file_id, type):
     if type == "text/tab-separated-values":
         print(type)
         print(file_id)
+        print("Starting uningest {0}".format(str(file_id)))
         url = url_base + "/api/files/" + str(file_id) + "/uningest"
         logging.info(url)
-        print("Starting uningest {0}".format(str(file_id)))
+
         resp = requests.post(url, headers=headers)
         if resp.status_code == 200 or resp.status_code == 201:
             print("Successfully ended uningest")
@@ -181,16 +182,18 @@ def reingest_file(fileFormat, file_id):
         or file_format == "application/x-spss-sav" \
         or file_format == "application/x-spss-por":
 
+
         url = url_base + "/api/files/" + str(file_id) + "/reingest"
         logging.info(url)
         print("Starting reingest {0}".format(str(file_id)))
         resp=requests.post(url, headers=headers)
         if resp.status_code != 200:
+            print(resp.status_code)
             print("Reingest was unsuccessful")
             logging.error("Error reingesting file {0}".format(file_id))
             return False
         else:
-            print("Successfully ended reingest")
+            print("Successfully queued reingest")
 
     return True
 def main():
