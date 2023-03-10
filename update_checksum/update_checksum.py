@@ -33,7 +33,7 @@ def create_connection(db_name, db_user, db_password, db_host, db_port):
             port=db_port,
         )
     except OperationalError as e:
-        logging.error(f"The ERROR '{e}' occurred")
+        logging.error("The ERROR {0} occurred".format(str(e)))
     return connection
 
 def execute_query(connection, query):
@@ -43,7 +43,7 @@ def execute_query(connection, query):
         cursor.execute(query)
         connection.commit()
     except OperationalError as e:
-        logging.error(f"The ERROR '{e}' occurred")
+        logging.error("The ERROR {0} occurred".format(str(e)))
         connection.rollback()
 
 
@@ -55,7 +55,7 @@ def execute_read_query(connection, query):
         result = cursor.fetchall()
         return result
     except OperationalError as e:
-        logging.error(f"The ERROR '{e}' occurred")
+        logging.error("The ERROR {0} occurred".format(str(e)))
 
 def find_identifier(owner_id):
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
@@ -126,7 +126,7 @@ def uningest_file(file_id, type):
             print("Successfully ended uningest")
             return True
         else:
-            print(resp.status_code)
+            print("status_code:" + str(resp.status_code))
             print("Uningest was unsuccessful")
             return False
     else:
@@ -189,7 +189,7 @@ def reingest_file(fileFormat, file_id):
         print("Starting reingest {0}".format(str(file_id)))
         resp=requests.post(url, headers=headers)
         if resp.status_code != 200:
-            print(resp.status_code)
+            print("status_code:" + resp.status_code)
             print("Reingest was unsuccessful")
             logging.error("Error reingesting file {0}".format(file_id))
             return False
