@@ -75,6 +75,7 @@ def replace_file(result, identifier, replacement_file):
     file_name = "s3://" + backet_name + "/" + identifier + "/" + storage_id
     logging.info("Dataverse file name: " + file_name)
     cmd = "aws --endpoint-url " + cfg_dataverse['s3_endpoint'] + " s3 cp " + replacement_file + " " + file_name
+    print("Start copying file..." )
     os.system(cmd)
 def find_storage_id(file_id):
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
@@ -212,13 +213,13 @@ def main():
     reader = csv.reader(csv_file, delimiter=',', escapechar='\\', quotechar='"')
 
     for file in reader:
-        logging.info(file[0])
-        print(str(file[0]))
+        logging.info("file_id:" + file[0])
+        print("=====================")
+        print("file_id:" + str(file[0]))
         file_metadata = get_file_metadata(file[0])
         if file_metadata != None and len(file_metadata) > 0 and file_metadata[0] != None and len(file_metadata[0][0])>0:
             original_type = file_metadata[0][0]
             status_uningest=uningest_file(file[0], original_type )
-            print(status_uningest)
             if status_uningest:
                 #Get new file
                 resp = requests.get(file[1], allow_redirects=True)
