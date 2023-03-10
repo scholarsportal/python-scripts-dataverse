@@ -9,6 +9,7 @@ import os
 import time
 import requests
 import logging
+import magic
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -97,7 +98,7 @@ def update_checksum(file_id, checksumvalue, filesize, contenttype):
                                    cfg_dataverse['db_password'],
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
 
-    query = "update datafile set checksumtype='MD5', checksumvalue='{1}', filesize={2} where id={0}".format(str(file_id), checksumvalue, filesize)
+    query = "update datafile set checksumtype='MD5', checksumvalue='{1}', filesize={2}, contenttype='{3}' where id={0}".format(str(file_id), checksumvalue, filesize, contenttype)
     execute_query(connection, query)
     connection.close()
 
@@ -129,12 +130,57 @@ def uningest_file(file_id, type):
     else:
         return True
 
-def reingest_file(originalFileFormat, file_ending, file_id):
-    original = originalFileFormat.lower()
-    logging.info(original)
-    if original == "text/tab-separated-values" or file_ending == 'sav' or \
-            file_ending == 'dta' or file_ending == 'por' or file_ending == 'csv' or \
-            file_ending == 'tsv' or file_ending == 'xlxs' or file_ending == 'xls':
+def determine_type_for_ingest(type, file_ending):
+    file_format = type.lower()
+    file_ending = file_ending.lower()
+    if file_format != "application/x-stata" \
+            or file_format != "application/x-stata-13" \
+            or file_format != "application/x-stata-14" \
+            or file_format != "application/x-stata-15" \
+            or file_format != "application/x-rlang-transport" \
+            or file_format != "text/csv" \
+            or file_format != "text/comma-separated-values" \
+            or file_format != "text/tsv" \
+            or file_format != "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" \
+            or file_format != "application/x-spss-sav" \
+            or file_format != "application/x-spss-por":
+
+        if file_ending == 'dta':
+            type = "application/x-stata"
+        elif file_ending == 'rdata':
+            type = "application/x-rlang-transport"
+        elif file_ending == 'csv':
+            type = "text/csv"
+        elif file_ending == 'tsv':
+            type = "text/tsv"
+        elif file_ending == 'xlxs' or file_ending == 'xls':
+            type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        elif file_ending == "sav":
+            type = "application/x-spss-sav"
+        elif file_ending == 'por':
+            type = "application/x-spss-por"
+
+    return type
+
+def reingest_file(fileFormat, file_id):
+    file_format = fileFormat.lower()
+    logging.info(file_format)
+    #if original == "text/tab-separated-values" or file_ending == 'sav' or \
+    #        file_ending == 'dta' or file_ending == 'por' or file_ending == 'csv' or \
+    #        file_ending == 'tsv' or file_ending == 'xlxs' or file_ending == 'xls':
+
+    if file_format == "application/x-stata" \
+        or file_format == "application/x-stata-13" \
+        or file_format == "application/x-stata-14" \
+        or file_format == "application/x-stata-15" \
+        or file_format == "application/x-rlang-transport" \
+        or file_format == "text/csv" \
+        or file_format == "text/comma-separated-values" \
+        or file_format == "text/tsv" \
+        or file_format == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" \
+        or file_format == "application/x-spss-sav" \
+        or file_format == "application/x-spss-por":
+
         url = url_base + "/api/files/" + str(file_id) + "/reingest"
         logging.info(url)
         print("Starting reingest {0}".format(str(file_id)))
@@ -167,7 +213,8 @@ def main():
         print(str(file[0]))
         file_metadata = get_file_metadata(file[0])
         if file_metadata != None and len(file_metadata) > 0 and file_metadata[0] != None and len(file_metadata[0][0])>0:
-            status_uningest=uningest_file(file[0], file_metadata[0][0])
+            original_type = file_metadata[0][0]
+            status_uningest=uningest_file(file[0], original_type )
             print(status_uningest)
             if status_uningest:
                 #Get new file
@@ -185,16 +232,14 @@ def main():
                             replace_file(result, identifier[0][0], "temp_file")
 
                             #Checksum
-                            #type = magic.from_file('temp_file', mime=True)
-                            #print(type)
+                            type = magic.from_file('temp_file', mime=True)
+
                             readable_hash = hashlib.md5(resp.content).hexdigest()
                             logging.info("Hash : " + readable_hash)
                             filesize = os.path.getsize('temp_file')
                             logging.info("Filesize: " + str(filesize))
                             #resp_meta = api.get_datafile_metadata(file[0])
                             #print(resp_meta.json())
-                            update_checksum(file[0], readable_hash, filesize, type)
-
 
                             #Update file metadata (label)
                             filename_split = file[1].split('/')
@@ -207,7 +252,12 @@ def main():
                             else:
                                 file_ending = None
 
-                            reingest_file(file_metadata[0][0], file_ending, file[0])
+                            type = determine_type_for_ingest(type, file_ending)
+                            print("New file type: " + type)
+
+                            update_checksum(file[0], readable_hash, filesize, type)
+
+                            reingest_file(type, file[0])
 
                             #Delete temp file
                             os.system("rm temp_file")
