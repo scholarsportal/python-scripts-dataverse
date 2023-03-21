@@ -86,11 +86,28 @@ def find_storage_id(file_id):
     connection.close()
     return result
 
-def update_file_metadata(file_id, filename):
+def update_file_metadata(file_id, filename, check_date):
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
                                    cfg_dataverse['db_password'],
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
-    query = "update filemetadata set label ='{0}' where datafile_id={1}".format(filename, str(file_id))
+
+    now_date = datetime.now()
+    year = now_date.year
+    month = now_date.strftime("%b")
+    day = now_date.strftime("%d")
+
+    current_date = str(day) + "-" + month + "-" + str(year)
+
+    if check_date != None:
+        prov_freeform = "On {0}, the file was replaced with a backup copy as part of the remediation process " \
+                        "for files that fail the fixity check as outlined in the Borealis Preservation Plan " \
+                        "(borealisdata.ca/preservationplan). " \
+                        "The failed fixity check was first reported on {1}.".format(current_date,check_date)
+
+        query = "update filemetadata set label ='{0}', prov_freeform = '{2}' where datafile_id={1}".format(filename,
+                                                                                                           str(file_id), prov_freeform)
+    else:
+        query = "update filemetadata set label ='{0}' where datafile_id={1}".format(filename, str(file_id))
     execute_query(connection, query)
     connection.close()
 
@@ -245,10 +262,14 @@ def main():
                             #resp_meta = api.get_datafile_metadata(file[0])
                             #print(resp_meta.json())
 
-                            #Update file metadata (label)
+                            #Update file metadata (label)_
                             filename_split = file[1].split('/')
                             filename = filename_split[len(filename_split)-1]
-                            update_file_metadata(file[0], filename)
+                            if len(file) > 2 and file[2] != None:
+                                check_date = file[2]
+                            else:
+                                check_date = None
+                            update_file_metadata(file[0], filename,check_date)
 
                             file_ending_split = filename.split(".")
                             if file_ending_split != None and  len(filename_split) > 1:
