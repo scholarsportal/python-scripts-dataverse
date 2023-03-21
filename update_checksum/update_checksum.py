@@ -96,7 +96,7 @@ def update_file_metadata(file_id, filename, check_date):
     month = now_date.strftime("%b")
     day = now_date.strftime("%d")
 
-    current_date = str(day) + "-" + month + "-" + str(year)
+    current_date = str(year) + "-" + month + "-" + str(day)
 
     if check_date != None:
         prov_freeform = "On {0}, the file was replaced with a backup copy as part of the remediation process " \
