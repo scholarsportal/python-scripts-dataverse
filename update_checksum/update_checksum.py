@@ -86,7 +86,7 @@ def find_storage_id(file_id):
     connection.close()
     return result
 
-def update_file_metadata(file_id, filename, check_date):
+def update_file_metadata(file_id, filename, check_date, prov_freeform):
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
                                    cfg_dataverse['db_password'],
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
@@ -98,11 +98,8 @@ def update_file_metadata(file_id, filename, check_date):
 
     current_date = str(year) + "-" + month + "-" + str(day)
 
-    if check_date != None:
-        prov_freeform = "On {0}, the file was replaced with a backup copy as part of the remediation process " \
-                        "for files that fail the fixity check as outlined in the Borealis Preservation Plan " \
-                        "(borealisdata.ca/preservationplan). " \
-                        "The failed fixity check was first reported on {1}.".format(current_date,check_date)
+    if check_date != None and prov_freeform != None:
+        prov_freeform = prov_freeform.format(current_date,check_date)
 
         query = "update filemetadata set label ='{0}', prov_freeform = '{2}' where datafile_id={1}".format(filename,
                                                                                                            str(file_id), prov_freeform)
@@ -269,7 +266,11 @@ def main():
                                 check_date = file[2]
                             else:
                                 check_date = None
-                            update_file_metadata(file[0], filename,check_date)
+                            if len(file) > 3 and file[3] != None:
+                                prov = file[3]
+                            else:
+                                prov = None
+                            update_file_metadata(file[0], filename,check_date, prov)
 
                             file_ending_split = filename.split(".")
                             if file_ending_split != None and  len(filename_split) > 1:
@@ -282,10 +283,30 @@ def main():
 
                             update_checksum(file[0], readable_hash, filesize, type)
 
-                            reingest_file(type, file[0])
+                            if not reingest_file(type, file[0]):
+                                logging.error("Cannot reingest file {0} for dataset {1}".format(str(file[0]), identifier))
+                                print("Cannot reingest file {0} for dataset {1}".format(str(file[0]), identifier))
+
 
                             #Delete temp file
                             os.system("rm temp_file")
+                            logging.info("Validating {0}".format(identifier[0][0]))
+                            url = url_base + "/api/admin/validate/dataset/files/{0}".format(str(owner_id))
+                            try:
+                                r = requests.get(url)
+                                # r = config.api.get_request(url )
+                                if 'dataFiles' in r.json():
+                                    data_files = r.json()['dataFiles']
+                                    for dt in data_files:
+                                        if dt["datafileId"] == int(file[0]):
+                                            if dt['status'] == 'valid':
+                                                print("File {0} is valid".format(str(file[0])))
+                                            else:
+                                                print("File {0} is not valid".format(str(file[0])))
+                                            break
+                            except Exception as e:
+                                logging.error("Cannot validate file {0}".format(str(file[0])))
+                                print("Cannot validate file {0}".format(str(file[0])))
                         else:
                             logging.error("Cannot find PID for file {0} and dataset {1}".format(str(file[0]), str(owner_id)))
                     else:
@@ -294,6 +315,11 @@ def main():
                     logging.error("Cannot get file {0}".format(file[1]))
             else:
                 logging.error("Cannot uningest file {0}".format(str(file[0])))
+                print("Try to reingest manually with: " \
+                     "curl -H 'X-Dataverse-key:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' -X POST " \
+                     "https://borealisdata.ca/api/files/{0}/reingest  and rerun the script for that file".format(
+                    str(file[0])))
+
         else:
             logging.error("Cannot get file metadata for file {0}".format(str(file[0])))
 
