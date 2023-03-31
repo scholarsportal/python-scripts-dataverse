@@ -129,8 +129,6 @@ def get_file_metadata(file_id):
 
 def uningest_file(file_id, type):
     if type == "text/tab-separated-values":
-        print(type)
-        print(file_id)
         print("Starting uningest {0}".format(str(file_id)))
         url = url_base + "/api/files/" + str(file_id) + "/uningest"
         logging.info(url)
@@ -184,7 +182,7 @@ def reingest_file(fileFormat, file_id):
     #if original == "text/tab-separated-values" or file_ending == 'sav' or \
     #        file_ending == 'dta' or file_ending == 'por' or file_ending == 'csv' or \
     #        file_ending == 'tsv' or file_ending == 'xlxs' or file_ending == 'xls':
-
+    ingested_type = False
     if file_format == "application/x-stata" \
         or file_format == "application/x-stata-13" \
         or file_format == "application/x-stata-14" \
@@ -197,6 +195,8 @@ def reingest_file(fileFormat, file_id):
         or file_format == "application/x-spss-sav" \
         or file_format == "application/x-spss-por":
 
+        ingested_type = True
+
 
         url = url_base + "/api/files/" + str(file_id) + "/reingest"
         logging.info(url)
@@ -206,11 +206,11 @@ def reingest_file(fileFormat, file_id):
             print("status_code:" + resp.status_code)
             print("Reingest was unsuccessful")
             logging.error("Error reingesting file {0}".format(file_id))
-            return False
+            return False, ingested_type
         else:
             print("Successfully queued reingest")
 
-    return True
+    return True, ingested_type
 def main():
 
     now_date = datetime.now()
@@ -282,31 +282,34 @@ def main():
                             print("New file type: " + type)
 
                             update_checksum(file[0], readable_hash, filesize, type)
-
-                            if not reingest_file(type, file[0]):
+                            reingest_resp = reingest_file(type, file[0])
+                            if not reingest_resp[0]:
                                 logging.error("Cannot reingest file {0} for dataset {1}".format(str(file[0]), identifier))
                                 print("Cannot reingest file {0} for dataset {1}".format(str(file[0]), identifier))
 
-
                             #Delete temp file
                             os.system("rm temp_file")
-                            logging.info("Validating {0}".format(identifier[0][0]))
-                            url = url_base + "/api/admin/validate/dataset/files/{0}".format(str(owner_id))
-                            try:
-                                r = requests.get(url)
-                                # r = config.api.get_request(url )
-                                if 'dataFiles' in r.json():
-                                    data_files = r.json()['dataFiles']
-                                    for dt in data_files:
-                                        if dt["datafileId"] == int(file[0]):
-                                            if dt['status'] == 'valid':
-                                                print("File {0} is valid".format(str(file[0])))
-                                            else:
-                                                print("File {0} is not valid".format(str(file[0])))
-                                            break
-                            except Exception as e:
-                                logging.error("Cannot validate file {0}".format(str(file[0])))
-                                print("Cannot validate file {0}".format(str(file[0])))
+
+                            #Validating only non tabular files
+                            if not reingest_resp[1]:
+                                logging.info("Validating {0}".format(identifier[0][0]))
+                                url = "http://localhost:8080/api/admin/validate/dataset/files/{0}".format(str(owner_id))
+                                logging.info(url)
+                                try:
+                                    r = requests.get(url)
+                                    # r = config.api.get_request(url )
+                                    if 'dataFiles' in r.json():
+                                        data_files = r.json()['dataFiles']
+                                        for dt in data_files:
+                                            if dt["datafileId"] == int(file[0]):
+                                                if dt['status'] == 'valid':
+                                                    print("File {0} is valid".format(str(file[0])))
+                                                else:
+                                                    print("File {0} is not valid".format(str(file[0])))
+                                                break
+                                except Exception as e:
+                                    logging.error("Cannot validate file {0} {1}".format(str(file[0]), str(e)))
+                                    print("Cannot validate file {0}".format(str(file[0])))
                         else:
                             logging.error("Cannot find PID for file {0} and dataset {1}".format(str(file[0]), str(owner_id)))
                     else:
