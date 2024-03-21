@@ -111,9 +111,13 @@ def main():
     connection = create_connection(cfg_dataverse['db_name'], cfg_dataverse['db_user'],
                                    cfg_dataverse['db_password'],
                                    cfg_dataverse['db_host'], cfg_dataverse['db_port'])
-    field_type = get_field_type(connection, 'topicClassification')[0][0]
+    conf_field = cfg_dataverse['field']
+    conf_field_term = cfg_dataverse['field_term']
+    conf_field_value = cfg_dataverse['field_value']
+
+    field_type = get_field_type(connection, conf_field)[0][0]
     logging.info(field_type)
-    field_type_term = get_field_type(connection,'topicClassValue')[0][0]
+    field_type_term = get_field_type(connection,conf_field_term)[0][0]
     logging.info(field_type_term)
 
     resp = api.get_children(cfg_dataverse['dataverse_alias'], "dataverse", ['dataverses', 'datasets'])
@@ -122,54 +126,57 @@ def main():
     datasets = dataverses[1]
     #print(datasets)
 
-    # for ds in datasets:
-    #     try:
-    #         pid = ds['pid']
-    #         #print(pid)
-    #         resp_dataset = api.get_dataset(pid)
-    #         #print(resp_dataset.json())
-    #         fields = resp_dataset.json()['data']['latestVersion']['metadataBlocks']['citation']['fields']
-    #         dataset_version = resp_dataset.json()['data']['latestVersion']['id']
-    #         datasetfields = get_datasetfields(connection, field_type, dataset_version)
-    #         logging.info(datasetfields)
-    #         display_number = 0
-    #         found = False
-    #         for f in fields:
-    #             if f['typeName'] == 'topicClassification':
-    #                 values = f['value']
-    #                 display_number = len(values)
-    #                 logging.info(f)
-    #                 logging.info(display_number)
-    #                 for v in values:
-    #                     if v['topicClassValue']['value'] == 'Public Opinion Polls':
-    #                         found = True
-    #         if not found and len(datasetfields) == 0:
-    #             field_id_array = insert_datasetfield_topic(connection, field_type, dataset_version)
-    #             if len(field_id_array) > 0:
-    #                 field_id = field_id_array[0][0]
-    #                 compoundvalue_id_array = insert_compound_value(connection,display_number,field_id)
-    #                 if len(compoundvalue_id_array) > 0:
-    #                     compoundvalue_id = compoundvalue_id_array[0][0]
-    #                     field_id_term_array = insert_datasetfield_topic_parent(connection, field_type_term, compoundvalue_id)
-    #                     if len(field_id_term_array) > 0:
-    #                         field_id_term = field_id_term_array[0][0]
-    #                         insert_dataset_field_value(connection,  field_id_term,'Public Opinion Polls')
-    #         elif (not found):
-    #             field_id = datasetfields[0][0]
-    #             compoundvalue_id_array = insert_compound_value(connection, display_number, field_id)
-    #             if len(compoundvalue_id_array) > 0:
-    #                 compoundvalue_id = compoundvalue_id_array[0][0]
-    #                 field_id_term_array = insert_datasetfield_topic_parent(connection, field_type_term, compoundvalue_id)
-    #                 if len(field_id_term_array) > 0:
-    #                     field_id_term = field_id_term_array[0][0]
-    #                     insert_dataset_field_value(connection, field_id_term, 'Public Opinion Polls')
-    #
-    #         #     #'INSERT INTO datasetfield (datasetfieldtype_id, datasetversion_id ) VALUES (25, 64) RETURNING id;'
-    #         #     #'INSERT INTO datasetfieldcompoundvalue (parentdatasetfield_id) VALUES (1107) RETURNING id'
-    #         #     #'insert into datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id) VALUES (26, 300) RETURNING id;'
-    #         #     #"insert into datasetfieldvalue (value, datasetfield_id) VALUES ('Public Opinion Polls2', 1109) RETURNING id;"
-    #     except Exception as e:
-    #         logging.error(e)
+    for ds in datasets:
+        try:
+            pid = ds['pid']
+            #print(pid)
+            resp_dataset = api.get_dataset(pid)
+            #print(resp_dataset.json())
+            fields = resp_dataset.json()['data']['latestVersion']['metadataBlocks']['citation']['fields']
+            dataset_version = resp_dataset.json()['data']['latestVersion']['id']
+            datasetfields = get_datasetfields(connection, field_type, dataset_version)
+            logging.info(datasetfields)
+            display_number = 0
+            found = False
+            for f in fields:
+                if f['typeName'] == conf_field:
+                    values = f['value']
+                    display_number = len(values)
+                    logging.info(f)
+                    logging.info(display_number)
+                    for v in values:
+                        if v[conf_field_term]['value'] == conf_field_value:
+                            found = True
+            logging.info(found)
+            logging.info(len(datasetfields))
+            if not found and len(datasetfields) == 0:
+                field_id_array = insert_datasetfield_topic(connection, field_type, dataset_version)
+                if len(field_id_array) > 0:
+                    field_id = field_id_array[0][0]
+                    compoundvalue_id_array = insert_compound_value(connection,display_number,field_id)
+                    if len(compoundvalue_id_array) > 0:
+                        compoundvalue_id = compoundvalue_id_array[0][0]
+                        field_id_term_array = insert_datasetfield_topic_parent(connection, field_type_term, compoundvalue_id)
+                        if len(field_id_term_array) > 0:
+                            field_id_term = field_id_term_array[0][0]
+                            insert_dataset_field_value(connection,  field_id_term,conf_field_value)
+            elif (not found):
+                field_id = datasetfields[0][0]
+                logging.info(field_id)
+                compoundvalue_id_array = insert_compound_value(connection, display_number, field_id)
+                if len(compoundvalue_id_array) > 0:
+                    compoundvalue_id = compoundvalue_id_array[0][0]
+                    field_id_term_array = insert_datasetfield_topic_parent(connection, field_type_term, compoundvalue_id)
+                    if len(field_id_term_array) > 0:
+                        field_id_term = field_id_term_array[0][0]
+                        insert_dataset_field_value(connection, field_id_term, conf_field_value)
+            #     #'INSERT INTO datasetfield (datasetfieldtype_id, datasetversion_id ) VALUES (25, 64) RETURNING id;'
+            #     #'INSERT INTO datasetfieldcompoundvalue (parentdatasetfield_id) VALUES (1107) RETURNING id'
+            #     #'insert into datasetfield (datasetfieldtype_id, parentdatasetfieldcompoundvalue_id) VALUES (26, 300) RETURNING id;'
+            #     #"insert into datasetfieldvalue (value, datasetfield_id) VALUES ('Public Opinion Polls2', 1109) RETURNING id;"
+        except Exception as e:
+            logging.error(e)
+            exit()
 
     connection.close()
     now = datetime.now()
