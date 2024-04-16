@@ -36,7 +36,9 @@ def main():
                         displayName = user['displayName']
                         email = user['email']
                         user_identifier = user['identifier']
-                        print("{},{},{},{}".format(user_identifier, displayName, email, i['file_id']))
+                        doi = i['dataset_persistent_id']
+                        dataset_name = i['dataset_name']
+                        print("{},{},{},{},{},{}".format(user_identifier, displayName, email, i['file_id'], doi, dataset_name))
             except Exception as e:
                 print(resp_req.json())
                 print(e)
