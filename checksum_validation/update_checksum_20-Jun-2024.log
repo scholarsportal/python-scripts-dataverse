@@ -1,0 +1,147 @@
+06/20/2024 03:41:28 PM INFO     [checksum_validation.py:54] Start checksum validation
+06/20/2024 03:41:28 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 03:41:28 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fa2df94b050>
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7fa2df92afd0> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fa2df8f0b30>
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 03:41:28 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 03:41:34 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 19:41:27 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 03:41:34 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 03:41:34 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 03:41:39 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 03:41:39 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 03:41:39 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 03:41:39 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 03:41:39 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 03:42:33 PM INFO     [checksum_validation.py:54] Start checksum validation
+06/20/2024 03:42:33 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 03:42:33 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fd51c79a3c0>
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7fd51c482550> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fd51c98bd40>
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 03:42:33 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 03:42:39 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 19:42:33 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 03:42:39 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 03:42:39 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 03:42:44 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 03:42:44 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 03:42:44 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 03:42:44 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 03:42:44 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 03:43:12 PM INFO     [checksum_validation.py:54] Start checksum validation
+06/20/2024 03:43:12 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 03:43:12 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ff7df8305f0>
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7ff7df53a550> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ff7dfa47e00>
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 03:43:12 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 03:43:18 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 19:43:12 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 03:43:18 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 03:43:18 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 03:43:23 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 03:43:23 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 03:43:23 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 03:43:23 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 03:43:23 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 04:10:15 PM INFO     [checksum_validation.py:62] Start checksum validation
+06/20/2024 04:10:15 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 04:10:15 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 04:10:15 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f767454efc0>
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7f7674522fd0> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f767454eed0>
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 04:10:16 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:22 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 20:10:15 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 04:10:22 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 04:10:22 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 04:10:27 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 04:10:27 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76713cfa40>
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7f76713b7dd0> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76713cf950>
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 04:10:27 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:29 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 20:10:27 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 04:10:29 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP3%2FTELIYD&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 04:10:29 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 04:10:32 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 04:10:32 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76713cca40>
+06/20/2024 04:10:32 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7f76713b40d0> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76713cc9b0>
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 20:10:32 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 04:10:33 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP3%2FNVJO3S&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 04:10:33 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 04:10:35 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/20/2024 04:10:35 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] connect_tcp.started host='borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76734b5fd0>
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] start_tls.started ssl_context=<ssl.SSLContext object at 0x7f767350c0d0> server_hostname='borealisdata.ca' timeout=None
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f76734b5ee0>
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/20/2024 04:10:35 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/20/2024 04:10:37 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 20 Jun 2024 20:10:34 GMT'), (b'server', b'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'strict-transport-security', b'max-age=15768000')])
+06/20/2024 04:10:37 PM INFO     [_client.py:1026] HTTP Request: GET https://borealisdata.ca/api/v1/datasets/:persistentId/versions?persistentId=doi%3A10.5683%2FSP3%2FTGS5HU%20&User-Agent=pydataverse&key=c32284a9-5176-4e38-9201-010fcd9fd929 "HTTP/1.1 200 OK"
+06/20/2024 04:10:37 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/20/2024 04:10:40 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/20/2024 04:10:40 PM DEBUG    [_trace.py:45] response_closed.started
+06/20/2024 04:10:40 PM DEBUG    [_trace.py:45] response_closed.complete
+06/20/2024 04:10:40 PM DEBUG    [_trace.py:45] close.started
+06/20/2024 04:10:40 PM DEBUG    [_trace.py:45] close.complete
+06/20/2024 04:30:14 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:31:27 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:32:32 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:33:04 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:35:42 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:36:43 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:38:00 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:38:35 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:41:30 PM INFO     [checksum_validation.py:92] Start checksum validation
+06/20/2024 04:42:51 PM INFO     [checksum_validation.py:92] Start checksum validation

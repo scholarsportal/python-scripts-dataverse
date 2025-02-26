@@ -1,0 +1,148 @@
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:28] Start checksum validation
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:34] Input file faileddatasets.csv
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP2/LMRVFN
+06/06/2024 03:06:17 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:06:17 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5d7dc68a70>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:06:17 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP2/LMRVFN
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TELIYD
+06/06/2024 03:06:17 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:06:17 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5d7cea2900>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:06:17 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FTELIYD&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TELIYD
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/NVJO3S
+06/06/2024 03:06:17 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:06:17 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5d7cea3650>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:06:17 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FNVJO3S&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/NVJO3S
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:06:17 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TGS5HU 
+06/06/2024 03:06:17 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:06:17 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5d7ceddf40>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:06:17 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FTGS5HU%20&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:06:17 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TGS5HU 
+06/06/2024 03:06:17 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:28] Start checksum validation
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:34] Input file faileddatasets.csv
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP2/LMRVFN
+06/06/2024 03:34:43 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:34:43 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcfde770a70>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:34:43 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP2%2FLMRVFN&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP2/LMRVFN
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TELIYD
+06/06/2024 03:34:43 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:34:43 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcfdd9a6a20>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:34:43 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FTELIYD&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TELIYD
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/NVJO3S
+06/06/2024 03:34:43 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:34:43 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcfdd9a7740>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:34:43 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FNVJO3S&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/NVJO3S
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:49] {}
+06/06/2024 03:34:43 PM INFO     [checksum_validation.py:37] http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TGS5HU 
+06/06/2024 03:34:43 PM DEBUG    [_config.py:80] load_ssl_context verify=True cert=None trust_env=True http2=False
+06/06/2024 03:34:43 PM DEBUG    [_config.py:146] load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/checksum_validation/env/lib/python3.12/site-packages/certifi/cacert.pem'
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.started host='localhost' port=8080 local_address=None timeout=None socket_options=None
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcfdd9e6000>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_headers.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] send_request_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Server', b'Payara Server 6.2023.8 #badassfish'), (b'X-Powered-By', b'Servlet/6.0 JSP/3.1 (Payara Server 6.2023.8 #badassfish Java/Ubuntu/17)'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Connection', b'close'), (b'Content-Length', b'2'), (b'X-Frame-Options', b'SAMEORIGIN')])
+06/06/2024 03:34:43 PM INFO     [_client.py:1026] HTTP Request: GET http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi%3A10.5683%2FSP3%2FTGS5HU%20&User-Agent=pydataverse "HTTP/1.1 500 Internal Server Error"
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.started request=<Request [b'GET']>
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] receive_response_body.complete
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.started
+06/06/2024 03:34:43 PM DEBUG    [_trace.py:45] response_closed.complete
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:48] 500 with status http://localhost:8080/api/admin/validate/dataset/files/:persistentId/?persistentId=doi:10.5683/SP3/TGS5HU 
+06/06/2024 03:34:43 PM ERROR    [checksum_validation.py:49] {}

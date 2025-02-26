@@ -1,0 +1,4666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns="http://www.icpsr.umich.edu/DDI" version="2.0">
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Labour Force Survey, May 2016 [Canada]</titl>
+        <IDNo agency="doi">10.5683/SP3/0X5FDD</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>Statistics Canada</AuthEnty>
+      </rspStmt>
+      <biblCit>Statistics Canada, 2023, "Labour Force Survey, May 2016 [Canada]", https://doi.org/10.5683/SP3/0X5FDD, Borealis, V1, UNF:6:xWqMJmdY++AG37kGnIZH6A== [fileUNF]</biblCit>
+    </citation>
+  </stdyDscr>
+  <fileDscr ID="f625015">
+    <fileTxt>
+      <fileName>lfs-71M0001XCB-E-2016-May_F1.tab</fileName>
+      <dimensns>
+        <caseQnty>103598</caseQnty>
+        <varQnty>81</varQnty>
+      </dimensns>
+      <fileType>text/tab-separated-values</fileType>
+    </fileTxt>
+    <notes level="file" type="VDC:UNF" subject="Universal Numeric Fingerprint">UNF:6:xWqMJmdY++AG37kGnIZH6A==</notes>
+  </fileDscr>
+  <dataDscr>
+    <varGrp ID="VG61002" var="v2541197">
+      <labl>Member of Union</labl>
+    </varGrp>
+    <varGrp ID="VG61001" var="v2541150 v2541151 v2541173">
+      <labl>Children</labl>
+    </varGrp>
+    <varGrp ID="VG61000" var="v2541119">
+      <labl>Hourly Wage</labl>
+    </varGrp>
+    <varGrp ID="VG60999" var="v2541159 v2541191 v2541136">
+      <labl>Spouse</labl>
+    </varGrp>
+    <varGrp ID="VG60998" var="v2541143 v2541175 v2541172 v2541138 v2541186 v2541168 v2541150 v2541164 v2541146 v2541160 v2541145 v2541193">
+      <labl>Job Search</labl>
+    </varGrp>
+    <varGrp ID="VG60997" var="v2541158 v2541125 v2541189 v2541121 v2541183 v2541180 v2541129">
+      <labl>Demographics</labl>
+    </varGrp>
+    <varGrp ID="VG60996" var="v2541170 v2541155 v2541120 v2541185">
+      <labl>Part-Time Work</labl>
+    </varGrp>
+    <varGrp ID="VG60995" var="v2541139 v2541184 v2541137 v2541153 v2541182 v2541149 v2541162 v2541147 v2541128">
+      <labl>Hours of Work</labl>
+    </varGrp>
+    <varGrp ID="VG60994" var="v2541126 v2541150 v2541133">
+      <labl>Administration</labl>
+    </varGrp>
+    <varGrp ID="VG60993" var="v2541190 v2541156 v2541157 v2541123 v2541155 v2541187 v2541120 v2541134 v2541165 v2541140 v2541183 v2541181 v2541177">
+      <labl>Employment</labl>
+    </varGrp>
+    <varGrp ID="VG60992" var="v2541150 v2541127 v2541135 v2541132 v2541196 v2541195">
+      <labl>Education</labl>
+    </varGrp>
+    <varGrp ID="VG60991" var="v2541174 v2541176 v2541188">
+      <labl>Weight</labl>
+    </varGrp>
+    <varGrp ID="VG60990" var="v2541150 v2541178 v2541198">
+      <labl>Spouse</labl>
+    </varGrp>
+    <varGrp ID="VG60989" var="v2541150 v2541166 v2541192">
+      <labl>Job Tenure</labl>
+    </varGrp>
+    <varGrp ID="VG60988" var="v2541142 v2541154 v2541171 v2541169 v2541150 v2541167 v2541130 v2541194 v2541144">
+      <labl>Unemployment</labl>
+    </varGrp>
+    <varGrp ID="VG60987" var="v2541190 v2541179 v2541124">
+      <labl>Absent from work</labl>
+    </varGrp>
+    <varGrp ID="VG60986" var="v2541150 v2541131 v2541141">
+      <labl>Number of Employees at Work</labl>
+    </varGrp>
+    <varGrp ID="VG60985" var="v2541150 v2541191 v2541148 v2541152">
+      <labl>Spouse</labl>
+    </varGrp>
+    <varGrp ID="VG60984" var="v2541199 v2541122 v2541163 v2541161">
+      <labl>Economic Family</labl>
+    </varGrp>
+    <var ID="v2541150" name="REC_NUM" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Order of record in file</labl>
+      <qstn>
+        <qstnLit>
+Order of record in file
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">29906.310930972413</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="medn">51799.5</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="max">103598.0</sumStat>
+      <sumStat type="mean">51799.5</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:DJe+DaP0R7KeqkK9FVw9ig==</notes>
+    </var>
+    <var ID="v2541126" name="SURVYEAR" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Survey year</labl>
+      <qstn>
+        <qstnLit>
+Survey year
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="max">2016.0</sumStat>
+      <sumStat type="medn">2016.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="min">2016.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">2016.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:FVIe6kErI1/+H2vFFouNJw==</notes>
+    </var>
+    <var ID="v2541133" name="SURVMNTH" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Survey month</labl>
+      <qstn>
+        <qstnLit>
+Survey month
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="max">5.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">5.0</sumStat>
+      <sumStat type="medn">5.0</sumStat>
+      <sumStat type="mean">5.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:9J+5Fb5NLtaBKEDzVs/eYA==</notes>
+    </var>
+    <var ID="v2541183" name="LFSSTAT" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Labour force status</labl>
+      <qstn>
+        <qstnLit>
+Labour force status
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">2.944381165659555</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">2.346750908428751</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Employed, absent from work</labl>
+        <catStat type="freq">4121</catStat>
+        <catStat wgtd="wgtd" type="freq">1153770.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Unemployed, future start</labl>
+        <catStat type="freq">252</catStat>
+        <catStat wgtd="wgtd" type="freq">52383.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Unemployed, temporary layoff</labl>
+        <catStat type="freq">250</catStat>
+        <catStat wgtd="wgtd" type="freq">48403.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Employed, at work</labl>
+        <catStat type="freq">58082</catStat>
+        <catStat wgtd="wgtd" type="freq">1.7104899E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Unemployed, job searcher</labl>
+        <catStat type="freq">4330</catStat>
+        <catStat wgtd="wgtd" type="freq">1261395.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Not in labour force</labl>
+        <catStat type="freq">36563</catStat>
+        <catStat wgtd="wgtd" type="freq">9925878.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:QIg9NVL7GG/hGsz1/JQ9rw==</notes>
+    </var>
+    <var ID="v2541158" name="PROV" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Province</labl>
+      <qstn>
+        <qstnLit>
+Province
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">35.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">14.799149556184664</sumStat>
+      <sumStat type="mean">35.28442634027685</sumStat>
+      <sumStat type="min">10.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="max">59.0</sumStat>
+      <catgry>
+        <catValu>35</catValu>
+        <labl level="category">Ontario</labl>
+        <catStat type="freq">28126</catStat>
+        <catStat wgtd="wgtd" type="freq">1.1502274E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>48</catValu>
+        <labl level="category">Alberta</labl>
+        <catStat type="freq">10742</catStat>
+        <catStat wgtd="wgtd" type="freq">3396401.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl level="category">Saskatchewan</labl>
+        <catStat type="freq">7595</catStat>
+        <catStat wgtd="wgtd" type="freq">867749.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">New Brunswick</labl>
+        <catStat type="freq">5262</catStat>
+        <catStat wgtd="wgtd" type="freq">623515.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Newfoundland</labl>
+        <catStat type="freq">3687</catStat>
+        <catStat wgtd="wgtd" type="freq">444200.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Nova Scotia</labl>
+        <catStat type="freq">5536</catStat>
+        <catStat wgtd="wgtd" type="freq">788120.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>59</catValu>
+        <labl level="category">British Columbia</labl>
+        <catStat type="freq">12228</catStat>
+        <catStat wgtd="wgtd" type="freq">3923566.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Prince Edward Island</labl>
+        <catStat type="freq">2823</catStat>
+        <catStat wgtd="wgtd" type="freq">121713.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">QuÃ©bec</labl>
+        <catStat type="freq">17971</catStat>
+        <catStat wgtd="wgtd" type="freq">6881673.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl level="category">Manitoba</labl>
+        <catStat type="freq">9628</catStat>
+        <catStat wgtd="wgtd" type="freq">997517.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:/JRkyHBp51MgaNLGCZr0vg==</notes>
+    </var>
+    <var ID="v2541121" name="CMA" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">3 largest CMAs</labl>
+      <qstn>
+        <qstnLit>
+3 largest CMAs (census metropolitan areas)
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">0.7149173051741665</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">4.0</sumStat>
+      <sumStat type="mean">3.74731172416456</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Montreal</labl>
+        <catStat type="freq">3643</catStat>
+        <catStat wgtd="wgtd" type="freq">3383310.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Toronto</labl>
+        <catStat type="freq">5764</catStat>
+        <catStat wgtd="wgtd" type="freq">5183314.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Other CMA or Non-CMA</labl>
+        <catStat type="freq">90470</catStat>
+        <catStat wgtd="wgtd" type="freq">1.8818453E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Vancouver</labl>
+        <catStat type="freq">3721</catStat>
+        <catStat wgtd="wgtd" type="freq">2161651.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:JSEaEglJreF7zoXOQ4LXGw==</notes>
+    </var>
+    <var ID="v2541189" name="AGE_12" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Age of respondent (5yr age gps)</labl>
+      <qstn>
+        <qstnLit>
+Five-year age group of respondent
+</qstnLit>
+      </qstn>
+      <sumStat type="max">12.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="medn">7.0</sumStat>
+      <sumStat type="stdev">3.506743582425563</sumStat>
+      <sumStat type="mean">6.993996023089235</sumStat>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">50 to 54</labl>
+        <catStat type="freq">9692</catStat>
+        <catStat wgtd="wgtd" type="freq">2689002.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">35 to 39</labl>
+        <catStat type="freq">7763</catStat>
+        <catStat wgtd="wgtd" type="freq">2324627.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">40 to 44</labl>
+        <catStat type="freq">7862</catStat>
+        <catStat wgtd="wgtd" type="freq">2368962.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">30 to 34</labl>
+        <catStat type="freq">7856</catStat>
+        <catStat wgtd="wgtd" type="freq">2467794.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">60 to 64</labl>
+        <catStat type="freq">8728</catStat>
+        <catStat wgtd="wgtd" type="freq">2255326.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">45 to 49</labl>
+        <catStat type="freq">8318</catStat>
+        <catStat wgtd="wgtd" type="freq">2339609.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">65 to 69</labl>
+        <catStat type="freq">7573</catStat>
+        <catStat wgtd="wgtd" type="freq">1938483.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">15 to 19</labl>
+        <catStat type="freq">7248</catStat>
+        <catStat wgtd="wgtd" type="freq">2002765.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">25 to 29</labl>
+        <catStat type="freq">7524</catStat>
+        <catStat wgtd="wgtd" type="freq">2434423.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">70+</labl>
+        <catStat type="freq">14151</catStat>
+        <catStat wgtd="wgtd" type="freq">3735277.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">20 to 24</labl>
+        <catStat type="freq">7253</catStat>
+        <catStat wgtd="wgtd" type="freq">2387686.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">55 to 59</labl>
+        <catStat type="freq">9630</catStat>
+        <catStat wgtd="wgtd" type="freq">2602774.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:txtYIbbyMbTaZMiK+HYShQ==</notes>
+    </var>
+    <var ID="v2541125" name="AGE_6" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Age of respondent (15-29 yrs old)</labl>
+      <qstn>
+        <qstnLit>
+Age in 2- and 3-year groups, respondents aged 15 to 29.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">81573.0</sumStat>
+      <sumStat type="vald">22025.0</sumStat>
+      <sumStat type="mean">3.624880817253123</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <sumStat type="stdev">1.706895660189919</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">22 to 24</labl>
+        <catStat type="freq">4374</catStat>
+        <catStat wgtd="wgtd" type="freq">1437725.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">15 to 16</labl>
+        <catStat type="freq">2888</catStat>
+        <catStat wgtd="wgtd" type="freq">758057.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">17 to 19</labl>
+        <catStat type="freq">4360</catStat>
+        <catStat wgtd="wgtd" type="freq">1244708.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">25 to 26</labl>
+        <catStat type="freq">3047</catStat>
+        <catStat wgtd="wgtd" type="freq">986153.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">27 to 29</labl>
+        <catStat type="freq">4477</catStat>
+        <catStat wgtd="wgtd" type="freq">1448270.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">20 to 21</labl>
+        <catStat type="freq">2879</catStat>
+        <catStat wgtd="wgtd" type="freq">949961.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:HN4E0asxOW49knAXM2kOjA==</notes>
+    </var>
+    <var ID="v2541129" name="SEX" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Sex of respondent</labl>
+      <qstn>
+        <qstnLit>
+Sex of respondent
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">0.4998107755179285</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="mean">1.51384196606112</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Male</labl>
+        <catStat type="freq">50365</catStat>
+        <catStat wgtd="wgtd" type="freq">1.4555679E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Female</labl>
+        <catStat type="freq">53233</catStat>
+        <catStat wgtd="wgtd" type="freq">1.4991049E7</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:a+cdBhN4uNHkyWCfTGY3sQ==</notes>
+    </var>
+    <var ID="v2541180" name="MARSTAT" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Marital status of respondent</labl>
+      <qstn>
+        <qstnLit>
+Marital status of respondent
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">2.8505666132550944</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="stdev">2.152877051356778</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Living in common-law</labl>
+        <catStat type="freq">12901</catStat>
+        <catStat wgtd="wgtd" type="freq">3677099.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Married</labl>
+        <catStat type="freq">49347</catStat>
+        <catStat wgtd="wgtd" type="freq">1.3767621E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Widowed</labl>
+        <catStat type="freq">5746</catStat>
+        <catStat wgtd="wgtd" type="freq">1473962.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Separated</labl>
+        <catStat type="freq">2619</catStat>
+        <catStat wgtd="wgtd" type="freq">723132.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Divorced</labl>
+        <catStat type="freq">5460</catStat>
+        <catStat wgtd="wgtd" type="freq">1505257.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Single, never married</labl>
+        <catStat type="freq">27525</catStat>
+        <catStat wgtd="wgtd" type="freq">8399657.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:jytPFLn/+eKLS2JcmRwRSQ==</notes>
+    </var>
+    <var ID="v2541196" name="ED76to89" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Highest educational attainment (1976-1989)</labl>
+      <qstn>
+        <qstnLit>
+Number of years of schooling completed by respondent - 1975 to 1989.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">0 to 8 years</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">9-10 yrs schooling</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">University degree</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">11-13 years schooling</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Post secondary certificate of diploma</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Some post secondary</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541195" name="EDUC90" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Highest educational attainment (1990-)</labl>
+      <qstn>
+        <qstnLit>
+Highest educational attainment - 1990 to present.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">1.6484978067326166</sumStat>
+      <sumStat type="mean">3.1424255294503793</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">University: graduate degree</labl>
+        <catStat type="freq">6528</catStat>
+        <catStat wgtd="wgtd" type="freq">2291028.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Post secondary certificate of diploma</labl>
+        <catStat type="freq">34266</catStat>
+        <catStat wgtd="wgtd" type="freq">9312213.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Some post secondary</labl>
+        <catStat type="freq">6888</catStat>
+        <catStat wgtd="wgtd" type="freq">2024192.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Grade 11 to 13,grad</labl>
+        <catStat type="freq">21207</catStat>
+        <catStat wgtd="wgtd" type="freq">5867403.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">University: bachelors degree</labl>
+        <catStat type="freq">14411</catStat>
+        <catStat wgtd="wgtd" type="freq">4970734.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">0 to 8 years</labl>
+        <catStat type="freq">6114</catStat>
+        <catStat wgtd="wgtd" type="freq">1540594.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Some secondary</labl>
+        <catStat type="freq">14184</catStat>
+        <catStat wgtd="wgtd" type="freq">3540564.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:Kg0lVK40gOON/sqkUKZKYA==</notes>
+    </var>
+    <var ID="v2541177" name="MJH" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Multiple or single job holder</labl>
+      <qstn>
+        <qstnLit>
+Multiple or single job holder
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">1.0593701268427564</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="stdev">0.23631803292842338</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Single job holder, including job changers</labl>
+        <catStat type="freq">58510</catStat>
+        <catStat wgtd="wgtd" type="freq">1.722581E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Multiple job holder</labl>
+        <catStat type="freq">3693</catStat>
+        <catStat wgtd="wgtd" type="freq">1032859.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:onHA2in98tY7C8mcrAbHYA==</notes>
+    </var>
+    <var ID="v2541171" name="EVERWORK" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Not currently employed, worked in past</labl>
+      <qstn>
+        <qstnLit>
+Identifies if a person has worked in the past.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">62203.0</sumStat>
+      <sumStat type="vald">41395.0</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">0.5760885988891064</sumStat>
+      <sumStat type="mean">1.9716632443531839</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Yes, more than 1 year ago</labl>
+        <catStat type="freq">27624</catStat>
+        <catStat wgtd="wgtd" type="freq">7281833.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">No, never worked</labl>
+        <catStat type="freq">6299</catStat>
+        <catStat wgtd="wgtd" type="freq">1985469.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Yes, within last year</labl>
+        <catStat type="freq">7472</catStat>
+        <catStat wgtd="wgtd" type="freq">2020757.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:JDNNzXzdJAFcsi92c9iKTQ==</notes>
+    </var>
+    <var ID="v2541155" name="FTPTLAST" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Full or part-time status of last job</labl>
+      <qstn>
+        <qstnLit>
+Full- or part-time status of last job
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">7472.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="mean">1.349973233404711</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="stdev">0.47699310194969186</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">96126.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Part-time (1to29 hrs)</labl>
+        <catStat type="freq">2615</catStat>
+        <catStat wgtd="wgtd" type="freq">753080.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Full-time (30+ hours)</labl>
+        <catStat type="freq">4857</catStat>
+        <catStat wgtd="wgtd" type="freq">1267677.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:FW6LZbX5vSNtWF0phs0RnQ==</notes>
+    </var>
+    <var ID="v2541134" name="COWMAIN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Class of worker, main job</labl>
+      <qstn>
+        <qstnLit>
+Class of worker, main job.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">34021.0</sumStat>
+      <sumStat type="vald">69577.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="stdev">1.2487920212730912</sumStat>
+      <sumStat type="mean">2.1853198614484612</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Priv/unpaid fam work</labl>
+        <catStat type="freq">106</catStat>
+        <catStat wgtd="wgtd" type="freq">29273.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Priv/self/inc/no empl</labl>
+        <catStat type="freq">1823</catStat>
+        <catStat wgtd="wgtd" type="freq">587263.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Public employee</labl>
+        <catStat type="freq">15129</catStat>
+        <catStat wgtd="wgtd" type="freq">3958950.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Private employee</labl>
+        <catStat type="freq">44597</catStat>
+        <catStat wgtd="wgtd" type="freq">1.342486E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Priv/self/uninc/0 emp</labl>
+        <catStat type="freq">4733</catStat>
+        <catStat wgtd="wgtd" type="freq">1373661.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Priv/self/uninc/w/emp</labl>
+        <catStat type="freq">863</catStat>
+        <catStat wgtd="wgtd" type="freq">223053.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Priv/self/inc/w/empl</labl>
+        <catStat type="freq">2326</catStat>
+        <catStat wgtd="wgtd" type="freq">659839.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:BZ3SGaUdWEiiBbewfo+nCA==</notes>
+    </var>
+    <var ID="v2541174" name="FILLER1" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Filler 1</labl>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541188" name="FILLER2" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Filler 2</labl>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541157" name="NAICS_18" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Industry of main job: NAICS 2007-18</labl>
+      <qstn>
+        <qstnLit>
+Industry of main job, current or held in last year - 18 groups.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">34021.0</sumStat>
+      <sumStat type="medn">11.0</sumStat>
+      <sumStat type="mean">10.457306293746509</sumStat>
+      <sumStat type="max">18.0</sumStat>
+      <sumStat type="vald">69577.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">4.72952068773851</sumStat>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Info/Culture/Rec</labl>
+        <catStat type="freq">2831</catStat>
+        <catStat wgtd="wgtd" type="freq">924755.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Retail Trade</labl>
+        <catStat type="freq">8127</catStat>
+        <catStat wgtd="wgtd" type="freq">2326486.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Utilities</labl>
+        <catStat type="freq">558</catStat>
+        <catStat wgtd="wgtd" type="freq">147919.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Agriculture</labl>
+        <catStat type="freq">1850</catStat>
+        <catStat wgtd="wgtd" type="freq">342222.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Other Services</labl>
+        <catStat type="freq">3089</catStat>
+        <catStat wgtd="wgtd" type="freq">851679.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Construction</labl>
+        <catStat type="freq">5838</catStat>
+        <catStat wgtd="wgtd" type="freq">1621511.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Forest/Fish/Mine/Oil&amp;Gas</labl>
+        <catStat type="freq">2183</catStat>
+        <catStat wgtd="wgtd" type="freq">392656.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Educational Services</labl>
+        <catStat type="freq">5090</catStat>
+        <catStat wgtd="wgtd" type="freq">1431774.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Wholesale Trade</labl>
+        <catStat type="freq">2255</catStat>
+        <catStat wgtd="wgtd" type="freq">743969.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Manufacture-durables</labl>
+        <catStat type="freq">3260</catStat>
+        <catStat wgtd="wgtd" type="freq">1002101.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Health Care/Soc Assist</labl>
+        <catStat type="freq">9177</catStat>
+        <catStat wgtd="wgtd" type="freq">2485704.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Finance/Insur/R.Estate&amp;Lea</labl>
+        <catStat type="freq">3429</catStat>
+        <catStat wgtd="wgtd" type="freq">1199098.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Mngmnt/Admin/Other Support</labl>
+        <catStat type="freq">2833</catStat>
+        <catStat wgtd="wgtd" type="freq">929943.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Transport/Warehousing</labl>
+        <catStat type="freq">3427</catStat>
+        <catStat wgtd="wgtd" type="freq">1001993.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Manufact non-durables</labl>
+        <catStat type="freq">2786</catStat>
+        <catStat wgtd="wgtd" type="freq">872079.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Accomm/Food Services</labl>
+        <catStat type="freq">4989</catStat>
+        <catStat wgtd="wgtd" type="freq">1457697.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Prof/Scient/Technical</labl>
+        <catStat type="freq">3920</catStat>
+        <catStat wgtd="wgtd" type="freq">1504496.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Public Administration</labl>
+        <catStat type="freq">3935</catStat>
+        <catStat wgtd="wgtd" type="freq">1020817.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:r+We1K6FWp8LP0Qtb2M9fQ==</notes>
+    </var>
+    <var ID="v2541123" name="NAICS_43" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">43-Industry of main job - NAICS 2007</labl>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Forestry and Logging</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Fabricated Metal</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Plastics and Rubber</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Elec Equip/Appliance</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl level="category">Wholesale Trade</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl level="category">Prov/Territ Pub Admin</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl level="category">Real Estate</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl level="category">Wharehousing/Storage</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl level="category">Transportation</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Fishing/Hunting/Trap</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Wood Product</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl level="category">Misc Manufacturing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Agriculture</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Food/Bev/Tobacco Prod</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl level="category">Local/Mun/Reg Pub Adm</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Utilities</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Computer/Electronic</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">Furniture and Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Prime Contracting</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl level="category">Managmt/Admin/Other</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Mining/Oil/Gas Extract</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl level="category">Educational Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Non-Metallic Mineral</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl level="category">Prof/Scientific/Techn</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Machinery Manufacture</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl level="category">Insur Carriers/Funds</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl level="category">H.Care/Social Assist</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl level="category">Fed Govt/Public Admin</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Clothing/Leather</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>39</catValu>
+        <labl level="category">Accom/Food Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl level="category">Info/Culture/Recreat</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Petro/Coal Products</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl level="category">Other Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Printing and Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl level="category">Rental &amp; Leasing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Trade Contracting</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Textile Mills/Product</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Paper Manufacturing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl level="category">Transport Equipment</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Primary Metal Manufact</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl level="category">Retail Trade</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Chemical Manufacturing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl level="category">Finance</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541156" name="SOC80_49" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">R's Occupation: SOC80 (1984-1986)-49</labl>
+      <qstn>
+        <qstnLit>
+Occupation at main job, current or held in last year.
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Math, stats, systems analysis and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl level="category">Other Processing Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl level="category">Excavating, Grading, Paving &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Medicine &amp; Health Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl level="category">Farmers and farm management</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl level="category">Other Transportation Operators</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Architecture and engineering related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Material Recording, Scheduling &amp; Dist</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Library, File, Correspondence, other clerical and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Religion</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl level="category">Food, Beverage processing &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Stenographic &amp; Typing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl level="category">Mining &amp; quarrying, inc. gas and oil fields</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Architects and Engineers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Health diagnosing and treatment</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>49</catValu>
+        <labl level="category">Other crafts &amp; Equipment Operators, and NEC</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl level="category">Wood Products, Rubber, Plastics &amp; Rel.</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl level="category">Protective Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Office Machine &amp; EDP Operator</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Other Teaching &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl level="category">Mechanics &amp; repairmen</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl level="category">Sales,Commodities</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl level="category">Metal Prod,N.E.C.</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl level="category">Fishing, hunting, trapping &amp; related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl level="category">Personal, Apparel and furnishing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>48</catValu>
+        <labl level="category">Material handling</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">University &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl level="category">Metal Shaping &amp; Forming</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>39</catValu>
+        <labl level="category">Electrical, Electronic &amp; Related Equipment</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Officials and Administrative, Gov't</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Nursing, Therapy &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>45</catValu>
+        <labl level="category">Other Construction Trades</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl level="category">Food &amp; Beverage preparations, lodging and accom</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Elementary/Secondary &amp; Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl level="category">Other Service Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Physical, life science</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Artistic &amp; recreation</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>44</catValu>
+        <labl level="category">Electrical Power, Lighting &amp; Wire Comm</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Mgt. Admin.Related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl level="category">Other Machining Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Social sciences &amp; related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl level="category">Motor Transport Operators</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl level="category">Textiles, Furs &amp; Leather Goods</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Bookeeping, Account-Recording &amp; Rel</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl level="category">Other Farming, Hort. &amp; Husbandry</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl level="category">Forestry &amp; logging</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Other Managers Admin</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">Sales, Services &amp; Other sales</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Reception, Inf., Mail &amp; Message</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541165" name="SOC80_21" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">R's Occupation: SOC80 (1976-1998)-21</labl>
+      <qstn>
+        <qstnLit>
+Occupation at main job, current or held in last year.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Clerical &amp; related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Processing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Artictic, literary, recreational and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Natural Sciences, engineering and math</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Religion</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Social Science and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Teaching and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Farming, horticultural and husbandry</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Material handling</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Transport equipment operating</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Mining, quarrying, including oil and gas</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Other crafts</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Medecine and health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Managerial &amp; administrative</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Construction</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Machining</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Fishing, trapping and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Service</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Nev worked,disabled or worked more than 1 yr ago</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Sales</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Fabricating</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Forestry and logging</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541140" name="NOCS_01_25" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Occupation at main job - NOCS S-2006- begins 1987</labl>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <catgry>
+        <catValu>23</catValu>
+        <labl level="category">Primary Industry</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">Machine Ops/Assemblers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Other Management</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Other Trades</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Transport/Equipment</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Sales/Service/Travel</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Natural/Appl Sciences</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl level="category">Process/Manuf/Utility</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Retail/Sales/Cashiers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Protective Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Childcare/Home Supp</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Wholesale/Tech/Insur</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Teachers &amp; Professors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Finan/Secret/Administ</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Tech/Assisting/Health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Senior Management</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Chefs/Cooks/Food/Bev</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Construction Trades</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">S.Science/Govt/Relig</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Contractors/Supervisor</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Trades Helpers/Constr</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Clerical/Supervisors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Prof-Health/Nurse/RNs</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Prof-Business/Finance</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Art/Culture/Rec/Sport</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+      <notes><![CDATA[
+This variable is suppressed in 2015 due to confidentiality reasons.  Uniquely for the Labour Force Survey public use microdata files for 2016, no occupation variables are available.
+]]></notes>
+    </var>
+    <var ID="v2541181" name="NOCS_01_47" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Occupation at main job - NOCS S-2006- begins 1987</labl>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <catgry>
+        <catValu>39</catValu>
+        <labl level="category">Transp Equip/Operators</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">Retail &amp; Sales Clerks</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>44</catValu>
+        <labl level="category">Super in Manufacturing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl level="category">Agric, excl Labourers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Professional-Health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Finance/Insur Admin</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl level="category">Trades Help/Construct</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl level="category">Travel/Accom/Rec/Sport</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Prof-Natural/Appl Sci</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Mngrs in Retail/Food</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl level="category">Construction Trades</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Sr Mngmnt Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Clerical Supervisors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Secretaries</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Prof-Business/Finance</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl level="category">Trades/Transportation</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl level="category">Labourers-Proc/Manuf</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl level="category">Childcare/Home Support</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl level="category">Forestry/Mine/Oil/Gas</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>45</catValu>
+        <labl level="category">Machine Ops in Manuf</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Prof-Art and Culture</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl level="category">Mechanics</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Clerical Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl level="category">Chefs and Cooks</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Judges/Lawyers/Psych</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Nurse Supervisors/RNs</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Specialist Managers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl level="category">Prim Produc Labourers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl level="category">Other Trades N.E.C.</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Tech Occup-Art/Culture</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Tech Occ-Nat/Appl Sci</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl level="category">Engineer/Power Station</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl level="category">Wholesale/Tech/Insur</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl level="category">Machinists/Metal Form</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Sales/Service Superv</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Admin/Regulatory Occup</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl level="category">Food/Beverage Service</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl level="category">Heavy Equipment/Crane</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl level="category">Cashiers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Support Health Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Paralegals/Soc Service</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Teachers/Professors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl level="category">Assemblers in Manufact</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl level="category">Protective Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl level="category">Sales/Service Occup</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Other Managers N.E.C.</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Techn/Related-Health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+      <notes><![CDATA[
+This variable is suppressed in 2015 due to confidentiality reasons.  Uniquely for the Labour Force Survey public use microdata files for 2016, no occupation variables are available.
+]]></notes>
+    </var>
+    <var ID="v2541190" name="YABSENT" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Employed: reason absent full week</labl>
+      <qstn>
+        <qstnLit>
+Reason absent full week
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">4121.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="mean">1.6415918466391664</sumStat>
+      <sumStat type="invd">99477.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="stdev">1.0802318114090563</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Personal or family responsibilities</labl>
+        <catStat type="freq">1025</catStat>
+        <catStat wgtd="wgtd" type="freq">287272.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Vacation</labl>
+        <catStat type="freq">1183</catStat>
+        <catStat wgtd="wgtd" type="freq">365489.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other</labl>
+        <catStat type="freq">747</catStat>
+        <catStat wgtd="wgtd" type="freq">187971.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness or disability</labl>
+        <catStat type="freq">1166</catStat>
+        <catStat wgtd="wgtd" type="freq">313038.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:JgRY111nD+0kXELq2u24sg==</notes>
+    </var>
+    <var ID="v2541179" name="WKSAWAY" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Weeks absent from work</labl>
+      <qstn>
+        <qstnLit>
+Weeks absent from work
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">13.84348459111866</sumStat>
+      <sumStat type="stdev">20.66130034466211</sumStat>
+      <sumStat type="vald">4121.0</sumStat>
+      <sumStat type="invd">99477.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:zRyJGhCCQe4E4VIzOzDp9w==</notes>
+    </var>
+    <var ID="v2541124" name="PAYAWAY" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Paid for any time off, full week absence only</labl>
+      <qstn>
+        <qstnLit>
+Paid for time off, full-week absence only.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">1.5859838274932612</sumStat>
+      <sumStat type="invd">99888.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="vald">3710.0</sumStat>
+      <sumStat type="stdev">0.49261769325092997</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Yes</labl>
+        <catStat type="freq">1536</catStat>
+        <catStat wgtd="wgtd" type="freq">443722.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">No</labl>
+        <catStat type="freq">2174</catStat>
+        <catStat wgtd="wgtd" type="freq">603353.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:Cj419cZ2csjUjaS+e5b6vg==</notes>
+    </var>
+    <var ID="v2541128" name="UHRSMAIN" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Usual hours per week at main job</labl>
+      <qstn>
+        <qstnLit>
+Usual hours worked per week at main job.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">0.1</sumStat>
+      <sumStat type="mean">36.259746314486456</sumStat>
+      <sumStat type="stdev">12.211086640328304</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="medn">40.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:QSJGCgN5ci7SNRYemrgFMA==</notes>
+    </var>
+    <var ID="v2541149" name="AHRSMAIN" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Actual hours per week at main job</labl>
+      <qstn>
+        <qstnLit>
+Actual hours worked in reference week at main job.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="mean">33.996390849315986</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="medn">37.5</sumStat>
+      <sumStat type="stdev">16.377051862846844</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:MluTkvGyk+hw3keF/8kwqg==</notes>
+    </var>
+    <var ID="v2541120" name="FTPTMAIN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Full-time or part-time main or only job</labl>
+      <qstn>
+        <qstnLit>
+Full-time or part-time work schedule, main or only job.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="mean">1.188752954037586</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">0.39131539469059917</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Part-time</labl>
+        <catStat type="freq">11741</catStat>
+        <catStat wgtd="wgtd" type="freq">3416501.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Full-time</labl>
+        <catStat type="freq">50462</catStat>
+        <catStat wgtd="wgtd" type="freq">1.4842168E7</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:dvCIO1N+2Smb6vXucy3oaw==</notes>
+    </var>
+    <var ID="v2541153" name="UTOTHRS" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Usual hours per week at all jobs</labl>
+      <qstn>
+        <qstnLit>
+Usual hours worked per week at all jobs.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">0.1</sumStat>
+      <sumStat type="mean">37.08545086249859</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="medn">40.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">12.683095055252567</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:uAhzW848X36oIoN5tiBe+A==</notes>
+    </var>
+    <var ID="v2541139" name="ATOTHRS" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Actual hours per week at all jobs</labl>
+      <qstn>
+        <qstnLit>
+Actual hours worked per week at all jobs.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="stdev">16.755876925338498</sumStat>
+      <sumStat type="medn">38.0</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="mean">34.74592865295886</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:3AoiPycUhVX6L8+J6uk9dw==</notes>
+    </var>
+    <var ID="v2541184" name="HRSAWAY" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Hours away from work, employees, part-week only</labl>
+      <qstn>
+        <qstnLit>
+Hours away from work, part-week absence only.
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">1.3467923992041817</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">0.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="stdev">4.380826421623368</sumStat>
+      <sumStat type="vald">49258.0</sumStat>
+      <sumStat type="max">72.0</sumStat>
+      <sumStat type="invd">54340.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:4aHu7pmKAQF4v83XPlY4FA==</notes>
+    </var>
+    <var ID="v2541182" name="YAWAY" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Reason for part-week absence</labl>
+      <qstn>
+        <qstnLit>
+Reason for part-week absence in reference week.
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">2.0768521364893955</sumStat>
+      <sumStat type="invd">97092.0</sumStat>
+      <sumStat type="vald">6506.0</sumStat>
+      <sumStat type="stdev">1.0457317024484234</sumStat>
+      <sumStat type="max">4.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Vacation or civic holiday</labl>
+        <catStat type="freq">3007</catStat>
+        <catStat wgtd="wgtd" type="freq">837860.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other reasons</labl>
+        <catStat type="freq">468</catStat>
+        <catStat wgtd="wgtd" type="freq">132541.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Working short-time</labl>
+        <catStat type="freq">117</catStat>
+        <catStat wgtd="wgtd" type="freq">40120.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Personal or family responsibilities</labl>
+        <catStat type="freq">1109</catStat>
+        <catStat wgtd="wgtd" type="freq">309283.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness or disability</labl>
+        <catStat type="freq">1805</catStat>
+        <catStat wgtd="wgtd" type="freq">496889.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:jAcrDrxNThY8OS6o18KwOA==</notes>
+    </var>
+    <var ID="v2541137" name="PAIDOT" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Paid overtime hours in ref. week</labl>
+      <qstn>
+        <qstnLit>
+Paid overtime hours in reference week.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">54340.0</sumStat>
+      <sumStat type="max">70.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">49258.0</sumStat>
+      <sumStat type="mean">0.8143489382435303</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="medn">0.0</sumStat>
+      <sumStat type="stdev">3.563487965193842</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:bHPlII5y+ptvI9D5+zv3NA==</notes>
+    </var>
+    <var ID="v2541162" name="UNPAIDOT" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Unpaid overtime hours in ref. week</labl>
+      <qstn>
+        <qstnLit>
+Unpaid overtime hours in reference week.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">0.0</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">54340.0</sumStat>
+      <sumStat type="stdev">3.2973535030818995</sumStat>
+      <sumStat type="mean">0.8165617767672221</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="vald">49258.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:4LHk/djk15EAvOO3wkwiEg==</notes>
+    </var>
+    <var ID="v2541147" name="XTRAHRS" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Number of overtime or extra hours worked,</labl>
+      <qstn>
+        <qstnLit>
+Total overtime hours worked in reference week, paid and unpaid.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">54340.0</sumStat>
+      <sumStat type="vald">49258.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="mean">1.630910715010756</sumStat>
+      <sumStat type="medn">0.0</sumStat>
+      <sumStat type="stdev">4.767952793623196</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:LMnSvqpCy5dHo4ZUWgMjqw==</notes>
+    </var>
+    <var ID="v2541170" name="WHYPTOLD" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Reason for part-time - 1976-1996</labl>
+      <qstn>
+        <qstnLit>
+Reason for part-time employment, January 1976 - August 1996.
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other reasons</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Hours under 30 = full-time</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Not asked, multiple job holder, total hours &gt;29</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Did not want full-time</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Could only find part-time</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Personal or family responsibilities</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness or disability</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Going to school</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541185" name="WHYPTNEW" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Reason for part-time - 1997+</labl>
+      <qstn>
+        <qstnLit>
+Reason for part-time employment, starts January 1997.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="stdev">1.819467015721427</sumStat>
+      <sumStat type="medn">5.0</sumStat>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">91857.0</sumStat>
+      <sumStat type="vald">11741.0</sumStat>
+      <sumStat type="mean">4.480538284643556</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other reasons</labl>
+        <catStat type="freq">444</catStat>
+        <catStat wgtd="wgtd" type="freq">129502.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Business conditions/couldnt find FT,looked</labl>
+        <catStat type="freq">1129</catStat>
+        <catStat wgtd="wgtd" type="freq">347606.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Going to school</labl>
+        <catStat type="freq">2807</catStat>
+        <catStat wgtd="wgtd" type="freq">869452.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Business conditions/couldnt find FT,didnt look</labl>
+        <catStat type="freq">1915</catStat>
+        <catStat wgtd="wgtd" type="freq">572453.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Other personal/family</labl>
+        <catStat type="freq">392</catStat>
+        <catStat wgtd="wgtd" type="freq">122588.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Care for own children</labl>
+        <catStat type="freq">1073</catStat>
+        <catStat wgtd="wgtd" type="freq">303561.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Personal preference</labl>
+        <catStat type="freq">3474</catStat>
+        <catStat wgtd="wgtd" type="freq">940358.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness/disability</labl>
+        <catStat type="freq">507</catStat>
+        <catStat wgtd="wgtd" type="freq">130981.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:EjkxtrbKfboLrv0gMlkAaA==</notes>
+    </var>
+    <var ID="v2541166" name="TENURE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Job tenure in months, currently employed only</labl>
+      <qstn>
+        <qstnLit>
+Job tenure in months
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">240.0</sumStat>
+      <sumStat type="invd">41395.0</sumStat>
+      <sumStat type="vald">62203.0</sumStat>
+      <sumStat type="stdev">84.64580759677217</sumStat>
+      <sumStat type="medn">63.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">93.568075494751</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:BoL0IFR+L2i7YdFYkNVleQ==</notes>
+    </var>
+    <var ID="v2541192" name="PREVTEN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Job tenure of previous job in months, not curr employed</labl>
+      <qstn>
+        <qstnLit>
+Tenure of previous job in months
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">51.50895036615145</sumStat>
+      <sumStat type="invd">96224.0</sumStat>
+      <sumStat type="stdev">75.83212317949578</sumStat>
+      <sumStat type="medn">13.0</sumStat>
+      <sumStat type="vald">7374.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">240.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:lt8TA/iGc602y8yJ+B71cQ==</notes>
+    </var>
+    <var ID="v2541119" name="HRLYEARN" intrvl="contin" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Usual hourly wages, employees only</labl>
+      <qstn>
+        <qstnLit>
+Usual hourly wages
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">13.023453492089565</sumStat>
+      <sumStat type="max">120.19</sumStat>
+      <sumStat type="invd">50890.0</sumStat>
+      <sumStat type="medn">21.5</sumStat>
+      <sumStat type="vald">52708.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">24.93815530849207</sumStat>
+      <sumStat type="min">2.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:HtfZykb7UD/sqat475Oc5g==</notes>
+    </var>
+    <var ID="v2541197" name="UNION" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Union membership status, employees only</labl>
+      <qstn>
+        <qstnLit>
+Union membership status
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">0.9211078316595409</sumStat>
+      <sumStat type="vald">52708.0</sumStat>
+      <sumStat type="invd">50890.0</sumStat>
+      <sumStat type="medn">3.0</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="mean">2.364460802914166</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Union member</labl>
+        <catStat type="freq">16255</catStat>
+        <catStat wgtd="wgtd" type="freq">4378708.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Not member or covered</labl>
+        <catStat type="freq">35465</catStat>
+        <catStat wgtd="wgtd" type="freq">1.0823186E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Not member, covered by collective aggreement</labl>
+        <catStat type="freq">988</catStat>
+        <catStat wgtd="wgtd" type="freq">287521.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:dbbyIMK38nF7ewbCJWn6ug==</notes>
+    </var>
+    <var ID="v2541187" name="PERMTEMP" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Permanent or temporary job, employees only</labl>
+      <qstn>
+        <qstnLit>
+Permanent or temporary job status
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">50890.0</sumStat>
+      <sumStat type="stdev">0.7487703571673248</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="max">4.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">1.2857061546634279</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="vald">52708.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Not permanent/seasonal</labl>
+        <catStat type="freq">2298</catStat>
+        <catStat wgtd="wgtd" type="freq">541550.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Not permanent/casual or other</labl>
+        <catStat type="freq">2011</catStat>
+        <catStat wgtd="wgtd" type="freq">550170.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Permanent</labl>
+        <catStat type="freq">45035</catStat>
+        <catStat wgtd="wgtd" type="freq">1.3334006E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Not permanent/temporary, term or contract</labl>
+        <catStat type="freq">3364</catStat>
+        <catStat wgtd="wgtd" type="freq">1063689.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:BjZ3RmUpOcYhyflWY1uqDA==</notes>
+    </var>
+    <var ID="v2541131" name="ESTSIZE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Number of employees at workplace</labl>
+      <qstn>
+        <qstnLit>
+Number of employees at workplace.
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">2.070539576534871</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">50890.0</sumStat>
+      <sumStat type="max">4.0</sumStat>
+      <sumStat type="vald">52708.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">1.0020728497918847</sumStat>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">More than 500</labl>
+        <catStat type="freq">6079</catStat>
+        <catStat wgtd="wgtd" type="freq">1984689.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">20 to 99</labl>
+        <catStat type="freq">17757</catStat>
+        <catStat wgtd="wgtd" type="freq">5173647.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">100 to 500</labl>
+        <catStat type="freq">10216</catStat>
+        <catStat wgtd="wgtd" type="freq">3108651.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Less than 20</labl>
+        <catStat type="freq">18656</catStat>
+        <catStat wgtd="wgtd" type="freq">5222428.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:kHQtvetMtG/y04sggrKxqA==</notes>
+    </var>
+    <var ID="v2541141" name="FIRMSIZE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Number of employees at all locations</labl>
+      <qstn>
+        <qstnLit>
+Number of employees at all locations.
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">52708.0</sumStat>
+      <sumStat type="stdev">1.2011778606391228</sumStat>
+      <sumStat type="mean">2.9090650375654548</sumStat>
+      <sumStat type="invd">50890.0</sumStat>
+      <sumStat type="medn">3.0</sumStat>
+      <sumStat type="max">4.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">More than 500</labl>
+        <catStat type="freq">25266</catStat>
+        <catStat wgtd="wgtd" type="freq">7569857.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">100 to 500</labl>
+        <catStat type="freq">7962</catStat>
+        <catStat wgtd="wgtd" type="freq">2324328.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">20 to 99</labl>
+        <catStat type="freq">8901</catStat>
+        <catStat wgtd="wgtd" type="freq">2595851.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Less than 20</labl>
+        <catStat type="freq">10579</catStat>
+        <catStat wgtd="wgtd" type="freq">2999379.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:A3G7DwbFC72Wl8D/iTe9MA==</notes>
+    </var>
+    <var ID="v2541142" name="DURUNEMP" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Duration unemployed in weeks</labl>
+      <qstn>
+        <qstnLit>
+Duration of unemployment in weeks
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">8.0</sumStat>
+      <sumStat type="invd">99018.0</sumStat>
+      <sumStat type="max">99.0</sumStat>
+      <sumStat type="mean">16.611790393013123</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">20.186755074466394</sumStat>
+      <sumStat type="vald">4580.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:10OVO4/pyAJL1Kr15o6qAw==</notes>
+    </var>
+    <var ID="v2541194" name="FLOWUNEM" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Flows into unemployment</labl>
+      <qstn>
+        <qstnLit>
+Flows into unemployment
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">5.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">4832.0</sumStat>
+      <sumStat type="mean">4.3451986754966905</sumStat>
+      <sumStat type="stdev">2.1378787344435395</sumStat>
+      <sumStat type="invd">98766.0</sumStat>
+      <sumStat type="max">8.0</sumStat>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Job leavers/losers (status unknown), worked &gt;1 year ago</labl>
+        <catStat type="freq">404</catStat>
+        <catStat wgtd="wgtd" type="freq">125274.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Job losers, temporary layoffs</labl>
+        <catStat type="freq">250</catStat>
+        <catStat wgtd="wgtd" type="freq">48403.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Future starts</labl>
+        <catStat type="freq">252</catStat>
+        <catStat wgtd="wgtd" type="freq">52383.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Re-entrants - worked more than 1 year ago</labl>
+        <catStat type="freq">659</catStat>
+        <catStat wgtd="wgtd" type="freq">204668.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Re-entrants - worked 1 year ago or less</labl>
+        <catStat type="freq">1007</catStat>
+        <catStat wgtd="wgtd" type="freq">295806.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Job losers, permanent</labl>
+        <catStat type="freq">1385</catStat>
+        <catStat wgtd="wgtd" type="freq">363950.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Job leavers</labl>
+        <catStat type="freq">343</catStat>
+        <catStat wgtd="wgtd" type="freq">102762.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">New entrants</labl>
+        <catStat type="freq">532</catStat>
+        <catStat wgtd="wgtd" type="freq">168935.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:jBhS9A/gq1I2eB8pIEHvtg==</notes>
+    </var>
+    <var ID="v2541167" name="UNEMFTPT" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Unemployed, type of job wanted</labl>
+      <qstn>
+        <qstnLit>
+Type of job wanted
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.3220198675496686</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">0.5680620485605932</sumStat>
+      <sumStat type="vald">4832.0</sumStat>
+      <sumStat type="invd">98766.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Part-time</labl>
+        <catStat type="freq">1052</catStat>
+        <catStat wgtd="wgtd" type="freq">312779.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Future start</labl>
+        <catStat type="freq">252</catStat>
+        <catStat wgtd="wgtd" type="freq">52383.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Full-time</labl>
+        <catStat type="freq">3528</catStat>
+        <catStat wgtd="wgtd" type="freq">997019.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:yawaQKU6lMjSkhTBkrfdFg==</notes>
+    </var>
+    <var ID="v2541154" name="WHYLEFTO" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobless: reason left job (1976-96)</labl>
+      <qstn>
+        <qstnLit>
+Reason for leaving job
+</qstnLit>
+      </qstn>
+      <sumStat type="max">5.0</sumStat>
+      <sumStat type="stdev">1.4801167755015214</sumStat>
+      <sumStat type="mean">3.2319325481798717</sumStat>
+      <sumStat type="vald">7472.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="invd">96126.0</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Left job, Other reasons</labl>
+        <catStat type="freq">781</catStat>
+        <catStat wgtd="wgtd" type="freq">226099.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Left job, Going to school</labl>
+        <catStat type="freq">1295</catStat>
+        <catStat wgtd="wgtd" type="freq">382513.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Left job, Own illness or disability</labl>
+        <catStat type="freq">510</catStat>
+        <catStat wgtd="wgtd" type="freq">129581.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Left job, Personal or family responsibilities</labl>
+        <catStat type="freq">364</catStat>
+        <catStat wgtd="wgtd" type="freq">104945.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Lost job:laid off</labl>
+        <catStat type="freq">3584</catStat>
+        <catStat wgtd="wgtd" type="freq">923147.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Left job:retired</labl>
+        <catStat type="freq">938</catStat>
+        <catStat wgtd="wgtd" type="freq">254472.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:MBKYZCtGX1seLg5KozFrsg==</notes>
+    </var>
+    <var ID="v2541169" name="WHYLEFTN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobless: reason left job (1997-)</labl>
+      <qstn>
+        <qstnLit>
+Reason for leaving job - starts in 1997.
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">3.5531035845479373</sumStat>
+      <sumStat type="max">13.0</sumStat>
+      <sumStat type="vald">7472.0</sumStat>
+      <sumStat type="medn">7.0</sumStat>
+      <sumStat type="mean">7.58658993576017</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="invd">96126.0</sumStat>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Lost job, company moved or out of business (employee)</labl>
+        <catStat type="freq">162</catStat>
+        <catStat wgtd="wgtd" type="freq">44516.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Lost job, business conditions (employee)</labl>
+        <catStat type="freq">1224</catStat>
+        <catStat wgtd="wgtd" type="freq">310883.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Left job, caring for own children</labl>
+        <catStat type="freq">97</catStat>
+        <catStat wgtd="wgtd" type="freq">34254.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Left job: retired</labl>
+        <catStat type="freq">938</catStat>
+        <catStat wgtd="wgtd" type="freq">254472.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Lost job, dismissal or other reasons</labl>
+        <catStat type="freq">280</catStat>
+        <catStat wgtd="wgtd" type="freq">83674.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Lost job, end of temporary or casual (employee)</labl>
+        <catStat type="freq">1071</catStat>
+        <catStat wgtd="wgtd" type="freq">287965.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Lost job, end of seasonal job (employee)</labl>
+        <catStat type="freq">847</catStat>
+        <catStat wgtd="wgtd" type="freq">196109.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Left job, Own illness or disability</labl>
+        <catStat type="freq">510</catStat>
+        <catStat wgtd="wgtd" type="freq">129581.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Left job: going to school</labl>
+        <catStat type="freq">1295</catStat>
+        <catStat wgtd="wgtd" type="freq">382513.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Left job, other personal or family responsibilities</labl>
+        <catStat type="freq">148</catStat>
+        <catStat wgtd="wgtd" type="freq">43213.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Left job: business sold or closed down (self-employed)</labl>
+        <catStat type="freq">95</catStat>
+        <catStat wgtd="wgtd" type="freq">29905.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Left job: dissatisfied</labl>
+        <catStat type="freq">465</catStat>
+        <catStat wgtd="wgtd" type="freq">136342.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Left job, Other reasons</labl>
+        <catStat type="freq">221</catStat>
+        <catStat wgtd="wgtd" type="freq">59852.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Left job, pregnancy</labl>
+        <catStat type="freq">119</catStat>
+        <catStat wgtd="wgtd" type="freq">27478.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:qq9vmi94LNkfXvms32yZOA==</notes>
+    </var>
+    <var ID="v2541144" name="DURJLESS" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Duration of joblessness (months)</labl>
+      <qstn>
+        <qstnLit>
+Duration of joblessness in months.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">240.0</sumStat>
+      <sumStat type="mean">101.69931046273074</sumStat>
+      <sumStat type="vald">35096.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="medn">73.0</sumStat>
+      <sumStat type="invd">68502.0</sumStat>
+      <sumStat type="stdev">89.81527826177968</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:X2CA53WEJSSXpEfJHydtrg==</notes>
+    </var>
+    <var ID="v2541130" name="AVAILABL" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">R available for work in ref wk</labl>
+      <qstn>
+        <qstnLit>
+Identifies if available for work in reference week.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="invd">98112.0</sumStat>
+      <sumStat type="vald">5486.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">0.2498672743128329</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.9331024425811154</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Not available</labl>
+        <catStat type="freq">367</catStat>
+        <catStat wgtd="wgtd" type="freq">92825.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Yes, available</labl>
+        <catStat type="freq">5119</catStat>
+        <catStat wgtd="wgtd" type="freq">1444480.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:PJqB2qU8t6oawfizJpVNhg==</notes>
+    </var>
+    <var ID="v2541186" name="LKPUBAG" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Job seeker: checked w/employment agency</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, checked with public employment agency.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">102917.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="vald">681.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">681</catStat>
+        <catStat wgtd="wgtd" type="freq">199638.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:74H2YXBpPf/a8nNcRB9cXA==</notes>
+    </var>
+    <var ID="v2541143" name="LKEMPLOY" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Job seeker: checked w/employers directly</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, checked with employers directly.
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="invd">101447.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="vald">2151.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">2151</catStat>
+        <catStat wgtd="wgtd" type="freq">612132.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:kXnjw6nq7nKZhyPTqoCMIg==</notes>
+    </var>
+    <var ID="v2541145" name="LKRELS" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobseeker: contacted relatives</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, contacted relatives.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="invd">102685.0</sumStat>
+      <sumStat type="vald">913.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">913</catStat>
+        <catStat wgtd="wgtd" type="freq">287893.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:V3EsYHNhRHLWTYfgxbCG5w==</notes>
+    </var>
+    <var ID="v2541164" name="LKATADS" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobseeker: looked at ads</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, looked at job ads.
+</qstnLit>
+      </qstn>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="vald">2633.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="invd">100965.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">2633</catStat>
+        <catStat wgtd="wgtd" type="freq">777807.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:SnAfiqiiA7d/YHuOjM0s+Q==</notes>
+    </var>
+    <var ID="v2541175" name="LKANSADS" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobseeker: placed or answered ads</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, placed or answered ads.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="vald">1579.0</sumStat>
+      <sumStat type="invd">102019.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">1579</catStat>
+        <catStat wgtd="wgtd" type="freq">458598.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:ASlQR46xijKUw6btA4JEcA==</notes>
+    </var>
+    <var ID="v2541193" name="LKOTHER" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Jobseeker: other methods</labl>
+      <qstn>
+        <qstnLit>
+Unemployed, used other methods.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="invd">102540.0</sumStat>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="vald">1058.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">YES</labl>
+        <catStat type="freq">1058</catStat>
+        <catStat wgtd="wgtd" type="freq">341880.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:Vg4izOkoiU8PZJI8TJtr3w==</notes>
+    </var>
+    <var ID="v2541160" name="PRIORACT" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Main activity before started looking for work</labl>
+      <qstn>
+        <qstnLit>
+Main activity before started looking for work.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="vald">4330.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">0.9910707868881956</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="invd">99268.0</sumStat>
+      <sumStat type="mean">1.5616628175519633</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other</labl>
+        <catStat type="freq">453</catStat>
+        <catStat wgtd="wgtd" type="freq">131707.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Going to school</labl>
+        <catStat type="freq">1140</catStat>
+        <catStat wgtd="wgtd" type="freq">356386.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Working</labl>
+        <catStat type="freq">2132</catStat>
+        <catStat wgtd="wgtd" type="freq">591986.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Managing a home</labl>
+        <catStat type="freq">605</catStat>
+        <catStat wgtd="wgtd" type="freq">181316.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:ltpKs5o3722J4kIqwJeCUg==</notes>
+    </var>
+    <var ID="v2541138" name="YNOLKOLD" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">1976-96: looked in last 6 mos, why not look last 4 wks</labl>
+      <qstn>
+        <qstnLit>
+Reason did not look for work in the reference week - 1976 to 1996 (looked in last 6 months, but not during the past 4 weeks).
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness or disability</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Personal or family responsibilities</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Believes no work available</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Going to school</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Waiting for recall or reply</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541146" name="YNOLOOK" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Wanted job in ref wk: reason didnt look</labl>
+      <qstn>
+        <qstnLit>
+Reason did not look for work in the reference week.
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">1551.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">2.4597034171502257</sumStat>
+      <sumStat type="stdev">1.9784698329071788</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="invd">102047.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Care for own children</labl>
+        <catStat type="freq">129</catStat>
+        <catStat wgtd="wgtd" type="freq">33044.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Own illness or disability</labl>
+        <catStat type="freq">354</catStat>
+        <catStat wgtd="wgtd" type="freq">83221.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Other Personal or family responsibilities</labl>
+        <catStat type="freq">84</catStat>
+        <catStat wgtd="wgtd" type="freq">22083.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Other</labl>
+        <catStat type="freq">336</catStat>
+        <catStat wgtd="wgtd" type="freq">101395.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Believes no work available</labl>
+        <catStat type="freq">113</catStat>
+        <catStat wgtd="wgtd" type="freq">26512.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Going to school</labl>
+        <catStat type="freq">402</catStat>
+        <catStat wgtd="wgtd" type="freq">107191.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Waiting for recall or reply</labl>
+        <catStat type="freq">133</catStat>
+        <catStat wgtd="wgtd" type="freq">29676.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:/WHrS4Ivkl4ySbYY3E6WVA==</notes>
+    </var>
+    <var ID="v2541168" name="TLOLOOK" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Temporary layoff, job search in last 4 weeks</labl>
+      <qstn>
+        <qstnLit>
+Temporary layoff, job search in last 4 weeks.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">103348.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.6079999999999999</sumStat>
+      <sumStat type="vald">250.0</sumStat>
+      <sumStat type="stdev">0.48917601401822924</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="medn">2.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Yes</labl>
+        <catStat type="freq">98</catStat>
+        <catStat wgtd="wgtd" type="freq">19737.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">No</labl>
+        <catStat type="freq">152</catStat>
+        <catStat wgtd="wgtd" type="freq">28666.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:kkDdtqqSg244tNFSRki4Cw==</notes>
+    </var>
+    <var ID="v2541135" name="SCHOOLN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Current student status and type of school</labl>
+      <qstn>
+        <qstnLit>
+Current student status and type of school.
+</qstnLit>
+      </qstn>
+      <sumStat type="stdev">1.0607138815600428</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="vald">81874.0</sumStat>
+      <sumStat type="max">9.0</sumStat>
+      <sumStat type="mean">1.2870141925397554</sumStat>
+      <sumStat type="invd">21724.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Primary or secondary school, full-time</labl>
+        <catStat type="freq">4858</catStat>
+        <catStat wgtd="wgtd" type="freq">1305764.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Community college or CEGEP full-time</labl>
+        <catStat type="freq">1141</catStat>
+        <catStat wgtd="wgtd" type="freq">411733.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Other full-time</labl>
+        <catStat type="freq">264</catStat>
+        <catStat wgtd="wgtd" type="freq">93034.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Non-student</labl>
+        <catStat type="freq">72872</catStat>
+        <catStat wgtd="wgtd" type="freq">2.1082163E7</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">University part-time</labl>
+        <catStat type="freq">669</catStat>
+        <catStat wgtd="wgtd" type="freq">243113.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Primary or secondary school, part-time</labl>
+        <catStat type="freq">190</catStat>
+        <catStat wgtd="wgtd" type="freq">58508.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Other part-time</labl>
+        <catStat type="freq">263</catStat>
+        <catStat wgtd="wgtd" type="freq">86518.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Community college or CEGEP part-time</labl>
+        <catStat type="freq">359</catStat>
+        <catStat wgtd="wgtd" type="freq">114602.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">University full-time</labl>
+        <catStat type="freq">1258</catStat>
+        <catStat wgtd="wgtd" type="freq">477533.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:++E1L9zKyFMEospWSOXdKg==</notes>
+    </var>
+    <var ID="v2541172" name="RELREFN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Relationship to reference person</labl>
+      <qstn>
+        <qstnLit>
+Relationship to reference person.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="stdev">1.04305220214087</sumStat>
+      <sumStat type="mean">1.7425819031255454</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Son/daughter in law</labl>
+        <catStat type="freq">221</catStat>
+        <catStat wgtd="wgtd" type="freq">71009.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Son or daughter</labl>
+        <catStat type="freq">13684</catStat>
+        <catStat wgtd="wgtd" type="freq">4151737.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Spouse</labl>
+        <catStat type="freq">29610</catStat>
+        <catStat wgtd="wgtd" type="freq">8208639.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Other relative</labl>
+        <catStat type="freq">2475</catStat>
+        <catStat wgtd="wgtd" type="freq">756104.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Parent (or in-law)</labl>
+        <catStat type="freq">2231</catStat>
+        <catStat wgtd="wgtd" type="freq">802107.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Self (ref person)</labl>
+        <catStat type="freq">55377</catStat>
+        <catStat wgtd="wgtd" type="freq">1.5557132E7</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:69kRMJXwQVCFijQ2RqEmzQ==</notes>
+    </var>
+    <var ID="v2541161" name="EFAMTYPE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Type of economic family</labl>
+      <qstn>
+        <qstnLit>
+Type of economic family
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="mean">6.118361358327373</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="max">18.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">3.5</sumStat>
+      <sumStat type="stdev">5.260725098213874</sumStat>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">1par/par empl/kid&lt;18</labl>
+        <catStat type="freq">3554</catStat>
+        <catStat wgtd="wgtd" type="freq">1013964.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Other family types</labl>
+        <catStat type="freq">6854</catStat>
+        <catStat wgtd="wgtd" type="freq">2076566.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">H-W/wif empl/kid18-24</labl>
+        <catStat type="freq">834</catStat>
+        <catStat wgtd="wgtd" type="freq">287098.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">1par/par empl/kid18-24</labl>
+        <catStat type="freq">1734</catStat>
+        <catStat wgtd="wgtd" type="freq">592160.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Hus-wif 2earn, kid&lt;18</labl>
+        <catStat type="freq">18608</catStat>
+        <catStat wgtd="wgtd" type="freq">5481610.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">H-W/hus empl/0kids&lt;25</labl>
+        <catStat type="freq">5424</catStat>
+        <catStat wgtd="wgtd" type="freq">1406432.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">H-W/hus empl/child&lt;18</labl>
+        <catStat type="freq">4985</catStat>
+        <catStat wgtd="wgtd" type="freq">1550516.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Unattached individual</labl>
+        <catStat type="freq">19080</catStat>
+        <catStat wgtd="wgtd" type="freq">5415792.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">1par/par no-emp/18-24</labl>
+        <catStat type="freq">470</catStat>
+        <catStat wgtd="wgtd" type="freq">173858.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">H-W non-earn/child&lt;18</labl>
+        <catStat type="freq">971</catStat>
+        <catStat wgtd="wgtd" type="freq">302035.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Hus-wif 2earn, 18-24</labl>
+        <catStat type="freq">5380</catStat>
+        <catStat wgtd="wgtd" type="freq">1678995.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">H-W/wif empl/0kids&lt;25</labl>
+        <catStat type="freq">3988</catStat>
+        <catStat wgtd="wgtd" type="freq">1020057.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">H-W/wif empl/child&lt;18</labl>
+        <catStat type="freq">1593</catStat>
+        <catStat wgtd="wgtd" type="freq">431356.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">1par/par no-emp/kid&lt;18</labl>
+        <catStat type="freq">1327</catStat>
+        <catStat wgtd="wgtd" type="freq">355993.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">H-W/hus empl/kid 18-24</labl>
+        <catStat type="freq">1192</catStat>
+        <catStat wgtd="wgtd" type="freq">398522.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">H-W non-earn/kids18-24</labl>
+        <catStat type="freq">407</catStat>
+        <catStat wgtd="wgtd" type="freq">144051.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">H-W non-earn/0kids&lt;25</labl>
+        <catStat type="freq">13086</catStat>
+        <catStat wgtd="wgtd" type="freq">3304435.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Hus-wif 2earn,0kid&lt;25</labl>
+        <catStat type="freq">14111</catStat>
+        <catStat wgtd="wgtd" type="freq">3913288.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:uc4qeA51vhf+bh8Hebo4lQ==</notes>
+    </var>
+    <var ID="v2541199" name="EFAMSIZE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable"># of individuals in economic family</labl>
+      <qstn>
+        <qstnLit>
+Number of individuals in economic family.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="stdev">1.2708884100120237</sumStat>
+      <sumStat type="mean">2.67320797698797</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="max">5.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:9E867zEND052zMAsOYOAFQ==</notes>
+    </var>
+    <var ID="v2541163" name="EFAMEMPL" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable"># employed persons in economic family</labl>
+      <qstn>
+        <qstnLit>
+Total number of employed persons in economic family.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">1.001253119734386</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="mean">1.3720245564586206</sumStat>
+      <sumStat type="max">3.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:SHnMYNL7HSW1wpDLyKtw/A==</notes>
+    </var>
+    <var ID="v2541122" name="EFAMUNEM" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable"># unemployed persons in economic family</labl>
+      <qstn>
+        <qstnLit>
+Total number of unemployed persons in economic family.
+</qstnLit>
+      </qstn>
+      <sumStat type="mean">0.11556207648796435</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <sumStat type="medn">0.0</sumStat>
+      <sumStat type="stdev">0.3498049361390062</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="max">2.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:7L6XgzDolnfT+2jNA1qRUQ==</notes>
+    </var>
+    <var ID="v2541191" name="SP_AGE" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Age of spouse, if applicable</labl>
+      <qstn>
+        <qstnLit>
+Age of spouse or partner, if applicable.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">44379.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="stdev">1.4215072380039622</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="mean">5.124858575794935</sumStat>
+      <sumStat type="vald">59219.0</sumStat>
+      <sumStat type="medn">5.0</sumStat>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">65+</labl>
+        <catStat type="freq">13025</catStat>
+        <catStat wgtd="wgtd" type="freq">3311594.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">20 - 24</labl>
+        <catStat type="freq">1055</catStat>
+        <catStat wgtd="wgtd" type="freq">290036.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">55 - 64</labl>
+        <catStat type="freq">12902</catStat>
+        <catStat wgtd="wgtd" type="freq">3352503.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">45 - 54</labl>
+        <catStat type="freq">12511</catStat>
+        <catStat wgtd="wgtd" type="freq">3479059.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">25 - 34</labl>
+        <catStat type="freq">8487</catStat>
+        <catStat wgtd="wgtd" type="freq">2625322.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">15 - 19</labl>
+        <catStat type="freq">60</catStat>
+        <catStat wgtd="wgtd" type="freq">12746.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">35 - 44</labl>
+        <catStat type="freq">11179</catStat>
+        <catStat wgtd="wgtd" type="freq">3342958.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:YngKL/Er5alUqI7fMUMJpA==</notes>
+    </var>
+    <var ID="v2541152" name="SP_LFSST" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse - Labour Force Status</labl>
+      <qstn>
+        <qstnLit>
+Labour force status of spouse, if applicable.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">5.0</sumStat>
+      <sumStat type="invd">44379.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <sumStat type="vald">59219.0</sumStat>
+      <sumStat type="stdev">1.3716171437534295</sumStat>
+      <sumStat type="mean">2.136611560478901</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Employed full-time</labl>
+        <catStat type="freq">32490</catStat>
+        <catStat wgtd="wgtd" type="freq">9317521.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Not in labour force</labl>
+        <catStat type="freq">19011</catStat>
+        <catStat wgtd="wgtd" type="freq">4971754.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Out of scope(military)</labl>
+        <catStat type="freq">237</catStat>
+        <catStat wgtd="wgtd" type="freq">56530.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Unemployed</labl>
+        <catStat type="freq">1847</catStat>
+        <catStat wgtd="wgtd" type="freq">496565.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Employed part-time</labl>
+        <catStat type="freq">5634</catStat>
+        <catStat wgtd="wgtd" type="freq">1571848.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:EuXsNlhbI9tSEGgESeab2A==</notes>
+    </var>
+    <var ID="v2541132" name="SPED7689" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse education (1976-1989)</labl>
+      <qstn>
+        <qstnLit>
+Spouse's number of years of schooling completed - 1976 to 1989.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Some post-secondary</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">0 to 8 years of education</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">University degree</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Post-secondary certificate or diploma</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Some or complete high school</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541127" name="SPED1990" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse education (1990-)</labl>
+      <qstn>
+        <qstnLit>
+Spouse's highest educatinal attainment - 1990 to present.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">5.0</sumStat>
+      <sumStat type="mean">3.3389452709434497</sumStat>
+      <sumStat type="stdev">1.4898345726844568</sumStat>
+      <sumStat type="medn">4.0</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">44379.0</sumStat>
+      <sumStat type="vald">59219.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Some secondary education</labl>
+        <catStat type="freq">5459</catStat>
+        <catStat wgtd="wgtd" type="freq">1250368.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Post-secondary certificate or diploma</labl>
+        <catStat type="freq">22108</catStat>
+        <catStat wgtd="wgtd" type="freq">5779595.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">0 to 8 yrs of education</labl>
+        <catStat type="freq">2719</catStat>
+        <catStat wgtd="wgtd" type="freq">641743.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Some post-secondary</labl>
+        <catStat type="freq">2538</catStat>
+        <catStat wgtd="wgtd" type="freq">657076.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">University degree</labl>
+        <catStat type="freq">14478</catStat>
+        <catStat wgtd="wgtd" type="freq">4944588.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Graduate from high school</labl>
+        <catStat type="freq">11917</catStat>
+        <catStat wgtd="wgtd" type="freq">3140848.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:WOR4ozlaEf6Q12uBKZS/BQ==</notes>
+    </var>
+    <var ID="v2541159" name="SP_SOC80" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse occupation: SOC80</labl>
+      <qstn>
+        <qstnLit>
+Spouse's occupation at main job, current or held in last year.
+</qstnLit>
+      </qstn>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Machining</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Managerial &amp; administrative</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Mining, quarrying, including oil and gas</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Religion</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Other crafts</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Material handling</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Transport equipment operating</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Natural Sciences, engineering and math</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Medecine and health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Artictic, literary, recreational and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Sales</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Farming, horticultural and husbandry</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Fabricating</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Teaching and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Construction</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Processing</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Clerical &amp; related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Fishing, trapping and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Social Science and related</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Forestry and logging</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Service</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541136" name="SP_NOCS06" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Occupation of spouse - NOC S-2006 - Begins 1987 - Ends 2015</labl>
+      <qstn>
+        <qstnLit>
+Spouse's occupation at main job, current or held in last year - Starts in 1987.
+</qstnLit>
+      </qstn>
+      <universe>Respondents who are married or living common law</universe>
+      <sumStat type="vald">0.0</sumStat>
+      <sumStat type="invd">103598.0</sumStat>
+      <sumStat type="max">NaN</sumStat>
+      <sumStat type="stdev">NaN</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="medn">NaN</sumStat>
+      <sumStat type="min">NaN</sumStat>
+      <sumStat type="mean">NaN</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Senior Management Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl level="category">Occupation in Protective Services</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Clerical Occupations, Including Supervisors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl level="category">Contractors and Supervisors in Trades and Transportation</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl level="category">Other Trades Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Financial, Secretarial and Administrative Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl level="category">Wholesale, Technical, Insurance, Real Estate Sales Specialis</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl level="category">Retail Salespersons, Sales Clerks, Cashiers, Including Retai</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl level="category">Teachers and Professors</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl level="category">Occupations Unique to Primary Industry</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl level="category">Sales and Service Occupations N.E.C, Including Occupations i</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl level="category">Occupations in Social Science, Government Service and Religi</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl level="category">Occupations in Art, Culture, Recreation and Sport</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl level="category">Chefs and Cooks, and Occupations in Food and Beverage Servic</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Other Management Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Natural and Applied Sciences and Related Occupations</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl level="category">Construction Trades</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Professional Occupations in Business and Finance</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl level="category">Labourer in Processing, Manufacturing and Utilities</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl level="category">Machine Operators and Assemblers in Manufacturing, Including</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl level="category">Childcare and Home Support Workers</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Professional Occupations in Health, Nurse Supervisors and Re</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl level="category">Trades Helpers, Construction, and Transportation Labourers a</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl level="category">Technical, Assisting and Related Occupations in Health</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl level="category">Transport and Equipment Operators</labl>
+        <catStat type="freq">0</catStat>
+        <catStat wgtd="wgtd" type="freq">0.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:+lSlRVCTQ+7JBK9Nc/ybXA==</notes>
+    </var>
+    <var ID="v2541198" name="SP_UHRSM" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse's usual hours at MAIN job</labl>
+      <qstn>
+        <qstnLit>
+Spouse's usual hours at main job, employed.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="medn">5.0</sumStat>
+      <sumStat type="mean">4.416561745881859</sumStat>
+      <sumStat type="invd">65474.0</sumStat>
+      <sumStat type="stdev">1.5055405104717632</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">38124.0</sumStat>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">50+</labl>
+        <catStat type="freq">3947</catStat>
+        <catStat wgtd="wgtd" type="freq">979114.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">41 to 49</labl>
+        <catStat type="freq">2539</catStat>
+        <catStat wgtd="wgtd" type="freq">702942.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">40</labl>
+        <catStat type="freq">14559</catStat>
+        <catStat wgtd="wgtd" type="freq">4221624.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">35 to 39</labl>
+        <catStat type="freq">8597</catStat>
+        <catStat wgtd="wgtd" type="freq">2612196.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">1 to 14</labl>
+        <catStat type="freq">1481</catStat>
+        <catStat wgtd="wgtd" type="freq">396173.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">30 to 34</labl>
+        <catStat type="freq">2848</catStat>
+        <catStat wgtd="wgtd" type="freq">801645.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">15 to 29</labl>
+        <catStat type="freq">4153</catStat>
+        <catStat wgtd="wgtd" type="freq">1175675.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:pQHgva1V5bYX5WQr19Aq9A==</notes>
+    </var>
+    <var ID="v2541178" name="SP_UHRST" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse's usual hours at ALL jobs</labl>
+      <qstn>
+        <qstnLit>
+Spouse's usual hours at all jobs, employed.
+</qstnLit>
+      </qstn>
+      <sumStat type="invd">65474.0</sumStat>
+      <sumStat type="mean">4.506085405518835</sumStat>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="vald">38124.0</sumStat>
+      <sumStat type="medn">5.0</sumStat>
+      <sumStat type="stdev">1.52685469699759</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">15 to 29</labl>
+        <catStat type="freq">3912</catStat>
+        <catStat wgtd="wgtd" type="freq">1103663.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">41 to 49</labl>
+        <catStat type="freq">2897</catStat>
+        <catStat wgtd="wgtd" type="freq">804396.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">50+</labl>
+        <catStat type="freq">4682</catStat>
+        <catStat wgtd="wgtd" type="freq">1171344.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">40</labl>
+        <catStat type="freq">14135</catStat>
+        <catStat wgtd="wgtd" type="freq">4108044.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">30 to 34</labl>
+        <catStat type="freq">2720</catStat>
+        <catStat wgtd="wgtd" type="freq">767303.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">35 to 39</labl>
+        <catStat type="freq">8399</catStat>
+        <catStat wgtd="wgtd" type="freq">2566665.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">1 to 14</labl>
+        <catStat type="freq">1379</catStat>
+        <catStat wgtd="wgtd" type="freq">367954.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:wZNo5aQXhDXrTOLr/nXzxw==</notes>
+    </var>
+    <var ID="v2541148" name="SP_COWM" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Spouse's class of worker at main job</labl>
+      <qstn>
+        <qstnLit>
+Spouse's class of work at main job, employed.
+</qstnLit>
+      </qstn>
+      <sumStat type="medn">2.0</sumStat>
+      <sumStat type="mean">1.5620662287441514</sumStat>
+      <sumStat type="max">7.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="vald">59219.0</sumStat>
+      <sumStat type="invd">44379.0</sumStat>
+      <sumStat type="stdev">1.5193185908991063</sumStat>
+      <sumStat type="min">0.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Public employee</labl>
+        <catStat type="freq">10114</catStat>
+        <catStat wgtd="wgtd" type="freq">2598788.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Private, self-employed unincorporated with employees</labl>
+        <catStat type="freq">665</catStat>
+        <catStat wgtd="wgtd" type="freq">170128.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Private employee</labl>
+        <catStat type="freq">23974</catStat>
+        <catStat wgtd="wgtd" type="freq">7052349.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Private, self-employed unincorporated, no employees</labl>
+        <catStat type="freq">3215</catStat>
+        <catStat wgtd="wgtd" type="freq">908352.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl level="category">Spouse present, not applicable</labl>
+        <catStat type="freq">17859</catStat>
+        <catStat wgtd="wgtd" type="freq">4690322.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl level="category">Private unpaid family worker</labl>
+        <catStat type="freq">61</catStat>
+        <catStat wgtd="wgtd" type="freq">15363.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Private, self-employed incorporated, no employees</labl>
+        <catStat type="freq">1407</catStat>
+        <catStat wgtd="wgtd" type="freq">448320.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Private, self-employed incorporated, with employees</labl>
+        <catStat type="freq">1924</catStat>
+        <catStat wgtd="wgtd" type="freq">530596.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:CiTpcaKpu2dkYwyjUDFnfg==</notes>
+    </var>
+    <var ID="v2541151" name="AGYOWNKN" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">Age of youngest own child (children)</labl>
+      <qstn>
+        <qstnLit>
+ge of youngest own child (children), 0 to 24 - if applicable.
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">3.2352859329344685</sumStat>
+      <sumStat type="stdev">1.7345146076805011</sumStat>
+      <sumStat type="max">6.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="invd">74850.0</sumStat>
+      <sumStat type="medn">3.0</sumStat>
+      <sumStat type="vald">28748.0</sumStat>
+      <catgry>
+        <catValu>2</catValu>
+        <labl level="category">Youngest child 3-5</labl>
+        <catStat type="freq">4075</catStat>
+        <catStat wgtd="wgtd" type="freq">1268542.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">Youngest child &lt;3</labl>
+        <catStat type="freq">6203</catStat>
+        <catStat wgtd="wgtd" type="freq">1823285.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl level="category">Youngest child 18-24</labl>
+        <catStat type="freq">5251</catStat>
+        <catStat wgtd="wgtd" type="freq">1673542.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl level="category">Youngest child 13-15</labl>
+        <catStat type="freq">3052</catStat>
+        <catStat wgtd="wgtd" type="freq">854188.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl level="category">Youngest child 16-17</labl>
+        <catStat type="freq">2220</catStat>
+        <catStat wgtd="wgtd" type="freq">604913.0</catStat>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl level="category">Youngest child 6-12</labl>
+        <catStat type="freq">7947</catStat>
+        <catStat wgtd="wgtd" type="freq">2356661.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:VQ7ULSZntc2px4ipOrntmA==</notes>
+    </var>
+    <var ID="v2541173" name="SCH1624" intrvl="discrete" wgt-var="v2541176">
+      <location fileid="f625015"/>
+      <labl level="variable">At least one child age 16 to 24 in school</labl>
+      <qstn>
+        <qstnLit>
+At least one child, aged 16 to 24, in school, if applicable.
+</qstnLit>
+      </qstn>
+      <sumStat type="max">1.0</sumStat>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="invd">96712.0</sumStat>
+      <sumStat type="vald">6886.0</sumStat>
+      <sumStat type="min">1.0</sumStat>
+      <sumStat type="mean">1.0</sumStat>
+      <sumStat type="stdev">0.0</sumStat>
+      <sumStat type="medn">1.0</sumStat>
+      <catgry>
+        <catValu>1</catValu>
+        <labl level="category">At least one child age 16 to 24 in school</labl>
+        <catStat type="freq">6886</catStat>
+        <catStat wgtd="wgtd" type="freq">2053435.0</catStat>
+      </catgry>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:iLGhMDtLeeYJQKkXCzbM/g==</notes>
+    </var>
+    <var ID="v2541176" name="FWEIGHT" intrvl="discrete" wgt="wgt">
+      <location fileid="f625015"/>
+      <labl level="variable">Final individual or family weight (Integer)</labl>
+      <qstn>
+        <qstnLit>
+Final individual or family weight (integer).
+</qstnLit>
+      </qstn>
+      <sumStat type="mode">.</sumStat>
+      <sumStat type="mean">285.2055831193655</sumStat>
+      <sumStat type="min">3.0</sumStat>
+      <sumStat type="invd">0.0</sumStat>
+      <sumStat type="stdev">268.93084776079957</sumStat>
+      <sumStat type="max">1567.0</sumStat>
+      <sumStat type="medn">164.0</sumStat>
+      <sumStat type="vald">103598.0</sumStat>
+      <varFormat type="numeric"/>
+      <notes subject="Universal Numeric Fingerprint" level="variable" type="VDC:UNF">UNF:6:LoS4SgChWvnp8Ma5XrTOEA==</notes>
+    </var>
+  </dataDscr>
+</codeBook>

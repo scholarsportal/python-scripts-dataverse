@@ -139,6 +139,12 @@ def update_var_ddi(map_ids, map_ids_n_d, dataDscr_dataverse, dataDscr_nesstar, n
             wgt = var_nesstar.get("wgt")
             if wgt != None:
                 var.set("wgt", wgt)
+
+        #labl
+            labl_nesstar = var_nesstar.find(ns + "labl")
+            if labl_nesstar != None:
+                var.append(labl_nesstar)
+            
             
 
         #qstn

@@ -1,0 +1,44 @@
+12/09/2024 05:04:12 PM INFO     Program started
+12/09/2024 05:04:12 PM DEBUG    list.csv
+12/09/2024 05:04:12 PM DEBUG    load_ssl_context verify=True cert=None trust_env=True http2=False
+12/09/2024 05:04:12 PM DEBUG    load_verify_locations cafile='/home/lubitchv/work/python-scripts-dataverse/dataverse_env/lib/python3.12/site-packages/certifi/cacert.pem'
+12/09/2024 05:04:12 PM DEBUG    connect_tcp.started host='demo.borealisdata.ca' port=443 local_address=None timeout=None socket_options=None
+12/09/2024 05:04:12 PM DEBUG    connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f23b4750bf0>
+12/09/2024 05:04:12 PM DEBUG    start_tls.started ssl_context=<ssl.SSLContext object at 0x7f23b45c2b50> server_hostname='demo.borealisdata.ca' timeout=None
+12/09/2024 05:04:12 PM DEBUG    start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f23b4cc7440>
+12/09/2024 05:04:12 PM DEBUG    send_request_headers.started request=<Request [b'GET']>
+12/09/2024 05:04:12 PM DEBUG    send_request_headers.complete
+12/09/2024 05:04:12 PM DEBUG    send_request_body.started request=<Request [b'GET']>
+12/09/2024 05:04:12 PM DEBUG    send_request_body.complete
+12/09/2024 05:04:12 PM DEBUG    receive_response_headers.started request=<Request [b'GET']>
+12/09/2024 05:04:13 PM DEBUG    receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 09 Dec 2024 22:04:13 GMT'), (b'server', b'Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips mod_apreq2-20101207/2.8.1'), (b'access-control-allow-origin', b'*'), (b'access-control-allow-methods', b'PUT, GET, POST, DELETE, OPTIONS'), (b'access-control-allow-headers', b'Accept, Content-Type, X-Dataverse-Key, Range'), (b'access-control-expose-headers', b'Accept-Ranges, Content-Range, Content-Encoding'), (b'set-cookie', b'JSESSIONID=d73944153792bb67f1e04a100501; Path=/; Secure'), (b'content-type', b'application/json;charset=UTF-8'), (b'transfer-encoding', b'chunked'), (b'x-frame-options', b'sameorigin'), (b'strict-transport-security', b'max-age=15768000')])
+12/09/2024 05:04:13 PM INFO     HTTP Request: GET https://demo.borealisdata.ca/api/v1/datasets/:persistentId/?persistentId=doi:10.80240/FK2/JJBCKP "HTTP/1.1 200 OK"
+12/09/2024 05:04:13 PM DEBUG    receive_response_body.started request=<Request [b'GET']>
+12/09/2024 05:04:13 PM DEBUG    receive_response_body.complete
+12/09/2024 05:04:13 PM DEBUG    response_closed.started
+12/09/2024 05:04:13 PM DEBUG    response_closed.complete
+12/09/2024 05:04:13 PM DEBUG    close.started
+12/09/2024 05:04:13 PM DEBUG    close.complete
+12/09/2024 05:04:13 PM DEBUG    Start get_var_metadata_dataverse
+12/09/2024 05:04:13 PM DEBUG    Start check_lock
+12/09/2024 05:04:13 PM DEBUG    Starting new HTTPS connection (1): demo.borealisdata.ca:443
+12/09/2024 05:04:13 PM DEBUG    https://demo.borealisdata.ca:443 "GET /api/datasets/49678/locks?X-Dataverse-key=af581316-e6a8-4265-b6a5-107db01c63de HTTP/11" 200 25
+12/09/2024 05:04:13 PM INFO     Dataset 49678 was locked 0.329683 sec
+12/09/2024 05:04:13 PM DEBUG    Starting new HTTPS connection (1): demo.borealisdata.ca:443
+12/09/2024 05:04:14 PM DEBUG    https://demo.borealisdata.ca:443 "GET /api/access/datafile/49679/metadata HTTP/11" 200 None
+12/09/2024 05:04:14 PM DEBUG    Start get_var_metadata
+12/09/2024 05:04:14 PM DEBUG    Start map_label_var
+12/09/2024 05:04:14 PM DEBUG    Start map_label_var
+12/09/2024 05:04:14 PM DEBUG    Start var_ids_correspondence
+12/09/2024 05:04:14 PM DEBUG    Before update_var_ddi
+12/09/2024 05:04:14 PM DEBUG    Start update_var_ddi
+12/09/2024 05:04:14 PM DEBUG    After update var ddi
+12/09/2024 05:04:14 PM DEBUG    Start var_update_dataset
+12/09/2024 05:04:14 PM DEBUG    Start check_lock
+12/09/2024 05:04:14 PM DEBUG    Starting new HTTPS connection (1): demo.borealisdata.ca:443
+12/09/2024 05:04:15 PM DEBUG    https://demo.borealisdata.ca:443 "GET /api/datasets/49678/locks?X-Dataverse-key=af581316-e6a8-4265-b6a5-107db01c63de HTTP/11" 200 25
+12/09/2024 05:04:15 PM INFO     Dataset 49678 was locked 0.345255 sec
+12/09/2024 05:04:15 PM DEBUG    Starting new HTTPS connection (1): demo.borealisdata.ca:443
+12/09/2024 05:04:16 PM DEBUG    https://demo.borealisdata.ca:443 "PUT /api/edit/49679 HTTP/11" 200 44
+12/09/2024 05:04:16 PM INFO     Updated var meta doi:10.80240/FK2/JJBCKP 49679
+12/09/2024 05:04:16 PM INFO     Program ended
