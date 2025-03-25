@@ -10,10 +10,10 @@ import lxml.etree as etree
 # This is an XML file reader. 
 
 #path = "/Users/thierryletendre/Desktop/Borealis/Python Code"
-path = '' # Insert path here
-os.chdir(path)
+#path = '' # Insert path here
+#os.chdir(path)
 
-with open("EPA_octobre_2024-1-ddi.xml", "r") as f:
+with open("EPA_octobre_2024-ddi.xml", "r") as f:
     xml_data = f.read()
 xml_format = BeautifulSoup(xml_data, "xml")
 
@@ -144,7 +144,7 @@ def organised_groups():
     values = cat_list
 
     d = {k: v for k, v in zip(keys, values)}
-    print(d)    
+    #print(d)
     
     
 
@@ -181,7 +181,7 @@ def organised_groups():
             key_counter_2 += 1
             key_counter_3 = 0
     
-    print(master_dictionary)
+    #print(master_dictionary)
     
     dictionary_counter = 0
     for i in master_dictionary:
